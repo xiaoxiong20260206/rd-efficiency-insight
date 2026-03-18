@@ -1,0 +1,4 @@
+# 研发效能知识库导出配置
+export:
+  policy: never
+  reason: "含快手内部案例和数据，不可公开导出"

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1060px;height:560px;overflow:hidden;background:#fff}
+.wb{width:1060px;height:560px;padding:16px;background:#fff}
+.outer{width:1028px;height:528px;background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 50%,#f0f9ff 100%);border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);padding:28px 32px;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;color:#1e293b;border:1px solid #e2e8f0}
+.title{font-size:20px;font-weight:700;color:#1e293b;text-align:center;margin-bottom:4px}
+.subtitle{font-size:12px;color:#64748b;text-align:center;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;flex:1}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.card-val{font-size:32px;font-weight:800;margin-bottom:4px}
+.card-label{font-size:11px;color:#64748b;margin-bottom:8px;line-height:1.4}
+.card-insight{font-size:10px;color:#94a3b8;line-height:1.4;border-top:1px solid #f1f5f9;padding-top:8px;margin-top:auto}
+.c-green{color:#16a34a}.c-amber{color:#d97706}.c-red{color:#dc2626}.c-blue{color:#2563eb}
+.bar{height:6px;border-radius:3px;margin-top:6px;width:100%;background:#f1f5f9}
+.bar-inner{height:100%;border-radius:3px}
+.bg-green{background:#86efac}.bg-amber{background:#fde68a}.bg-red{background:#fca5a5}.bg-blue{background:#93c5fd}
+.footer{flex-shrink:0;text-align:center;font-size:10px;color:#94a3b8;margin-top:14px}
+</style></head><body>
+<div class="wb"><div class="outer">
+<div class="title">DORA 2025：AI编程的矛盾数据全景</div>
+<div class="subtitle">数据来源：DORA Report 2025 · Jellyfish/OpenAI对照实验 · GitClear 2025</div>
+<div class="grid">
+  <div class="card">
+    <div class="card-val c-green">90%</div>
+    <div class="card-label">开发者在工作中使用AI</div>
+    <div class="bar"><div class="bar-inner bg-green" style="width:90%"></div></div>
+    <div class="card-insight">AI编程已成基础技能<br>非差异化优势</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-blue">80%+</div>
+    <div class="card-label">认为AI提升了生产力</div>
+    <div class="bar"><div class="bar-inner bg-blue" style="width:80%"></div></div>
+    <div class="card-insight">主观感受普遍积极<br>但 ≠ 客观交付提升</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-red">30%</div>
+    <div class="card-label">对AI代码信任度低</div>
+    <div class="bar"><div class="bar-inner bg-red" style="width:30%"></div></div>
+    <div class="card-insight">七成人"边用边怕"<br>信任缺口是下一个瓶颈</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-amber">20-30%</div>
+    <div class="card-label">已量化验证的生产力提升</div>
+    <div class="bar"><div class="bar-inner bg-amber" style="width:25%"></div></div>
+    <div class="card-insight">Jellyfish 2.8万人对照实验<br>首个大规模实证数据</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-green">90%</div>
+    <div class="card-label">高效组织采用内部平台</div>
+    <div class="bar"><div class="bar-inner bg-green" style="width:90%"></div></div>
+    <div class="card-insight">平台工程是<br>AI落地的操作系统</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-amber">4x</div>
+    <div class="card-label">AI代码Churn增长倍数</div>
+    <div class="bar"><div class="bar-inner bg-amber" style="width:75%"></div></div>
+    <div class="card-insight">GitClear: "废代码"激增<br>技术债加速器</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-red">9x</div>
+    <div class="card-label">AI用户 vs 非AI用户churn差</div>
+    <div class="bar"><div class="bar-inner bg-red" style="width:90%"></div></div>
+    <div class="card-insight">质量隐患不可忽视<br>短期效率 vs 长期质量</div>
+  </div>
+  <div class="card">
+    <div class="card-val c-blue">25%+</div>
+    <div class="card-label">大厂AI代码占比（均值）</div>
+    <div class="bar"><div class="bar-inner bg-blue" style="width:25%"></div></div>
+    <div class="card-insight">微软20-30% · 谷歌25%+<br>腾讯50% · 快手30%+</div>
+  </div>
+</div>
+<div class="footer">研发效能 × AI · 2026深度洞察 · 林克制图</div>
+</div></div>
+</body></html>

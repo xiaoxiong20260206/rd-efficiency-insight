@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1060px;height:600px;overflow:hidden;background:#fff}
+.wb{width:1060px;height:600px;padding:16px;background:#fff}
+.outer{width:1028px;height:568px;background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 50%,#f0f9ff 100%);border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);padding:20px 24px;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;color:#1e293b;border:1px solid #e2e8f0}
+.title{font-size:17px;font-weight:700;text-align:center;margin-bottom:2px}
+.subtitle{font-size:10px;color:#64748b;text-align:center;margin-bottom:12px}
+.layers{display:flex;gap:10px;flex:1;align-items:stretch}
+.layer{flex:1;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.l1-border{border:2px solid #bfdbfe}
+.l2-border{border:2px solid #fde68a}
+.l3-border{border:2px solid #bbf7d0}
+.layer-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.badge{padding:3px 10px;border-radius:6px;font-size:10px;font-weight:700}
+.b1{background:#dbeafe;color:#2563eb}.b2{background:#fef3c7;color:#d97706}.b3{background:#dcfce7;color:#16a34a}
+.layer-title{font-size:13px;font-weight:700}
+.layer-sub{font-size:9px;color:#64748b;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #f1f5f9}
+.capability{font-size:9px;color:#475569;line-height:1.6}
+.capability b{color:#1e293b}
+.tools-section{margin-top:auto;padding-top:8px;border-top:1px solid #f1f5f9}
+.tools-label{font-size:8px;color:#94a3b8;font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+.tool-tags{display:flex;flex-wrap:wrap;gap:3px}
+.tool-tag{padding:2px 7px;border-radius:4px;font-size:8.5px;font-weight:500}
+.t-global{background:#f1f5f9;color:#475569;border:1px solid #e2e8f0}
+.t-cn{background:#fef3c7;color:#92400e;border:1px solid #fde68a}
+.t-ks{background:#dbeafe;color:#1d4ed8;border:1px solid #bfdbfe}
+.status-bar{display:flex;align-items:center;gap:8px;margin-top:6px}
+.status-label{font-size:9px;font-weight:600}
+.status-fill{height:6px;border-radius:3px;flex:1;position:relative;overflow:hidden;background:#f1f5f9}
+.fill-inner{height:100%;border-radius:3px}
+.f1{background:linear-gradient(90deg,#3b82f6,#60a5fa);width:95%}
+.f2{background:linear-gradient(90deg,#f59e0b,#fbbf24);width:40%}
+.f3{background:linear-gradient(90deg,#22c55e,#4ade80);width:8%}
+.status-pct{font-size:9px;font-weight:700;width:40px;text-align:right}
+.bottom-row{display:flex;gap:10px;margin-top:10px;flex-shrink:0}
+.insight-card{flex:1;background:#fff;border-radius:10px;border:1px solid #e2e8f0;padding:10px 14px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.insight-title{font-size:10px;font-weight:700;margin-bottom:4px;color:#7c3aed}
+.insight-text{font-size:9px;color:#475569;line-height:1.5}
+.footer{text-align:center;font-size:8px;color:#94a3b8;margin-top:8px;flex-shrink:0}
+</style></head><body>
+<div class="wb"><div class="outer">
+<div class="title">AI编程工具生态：L1 / L2 / L3 能力分层</div>
+<div class="subtitle">基于快手"需求AI研发成熟度"模型 · 2026年竞争格局</div>
+
+<div class="layers">
+  <!-- L1 -->
+  <div class="layer l1-border">
+    <div class="layer-head"><span class="badge b1">L1</span><span class="layer-title" style="color:#2563eb">AI辅助 · Copilot</span></div>
+    <div class="layer-sub">人主导，AI仅辅助编码环节</div>
+    <div class="capability">
+      <b>核心能力</b><br>
+      • 代码补全 & 行级生成<br>
+      • 代码解释 & 注释生成<br>
+      • 简单Bug修复<br>
+      • 函数级代码生成
+    </div>
+    <div class="tools-section">
+      <div class="tools-label">代表工具</div>
+      <div class="tool-tags">
+        <span class="tool-tag t-global">Copilot</span>
+        <span class="tool-tag t-global">Tabnine</span>
+        <span class="tool-tag t-cn">CodeGeeX</span>
+        <span class="tool-tag t-cn">通义灵码</span>
+      </div>
+    </div>
+    <div class="status-bar">
+      <span class="status-label" style="color:#2563eb">渗透率</span>
+      <div class="status-fill"><div class="fill-inner f1"></div></div>
+      <span class="status-pct" style="color:#2563eb">~100%</span>
+    </div>
+  </div>
+  <!-- L2 -->
+  <div class="layer l2-border">
+    <div class="layer-head"><span class="badge b2">L2</span><span class="layer-title" style="color:#d97706">AI协同 · Agent</span></div>
+    <div class="layer-sub">人与AI深度协作，全流程参与</div>
+    <div class="capability">
+      <b>核心能力</b><br>
+      • 需求理解 & 架构设计<br>
+      • 任务级自主编码<br>
+      • 智能测试生成 & CR<br>
+      • 多文件跨模块修改<br>
+      • 上下文工程（企业知识灌注）
+    </div>
+    <div class="tools-section">
+      <div class="tools-label">代表工具</div>
+      <div class="tool-tags">
+        <span class="tool-tag t-global">Cursor</span>
+        <span class="tool-tag t-global">Windsurf</span>
+        <span class="tool-tag t-global">Claude Code</span>
+        <span class="tool-tag t-cn">Trae</span>
+        <span class="tool-tag t-cn">CodeBuddy</span>
+        <span class="tool-tag t-ks">CodeFlicker</span>
+      </div>
+    </div>
+    <div class="status-bar">
+      <span class="status-label" style="color:#d97706">渗透率</span>
+      <div class="status-fill"><div class="fill-inner f2"></div></div>
+      <span class="status-pct" style="color:#d97706"><10%</span>
+    </div>
+  </div>
+  <!-- L3 -->
+  <div class="layer l3-border">
+    <div class="layer-head"><span class="badge b3">L3</span><span class="layer-title" style="color:#16a34a">AI自主 · Agentic</span></div>
+    <div class="layer-sub">人如PM，AI端到端交付</div>
+    <div class="capability">
+      <b>核心能力</b><br>
+      • 端到端需求交付<br>
+      • 多Agent协作编排<br>
+      • 自主决策 & 异常处理<br>
+      • 自主测试 & 部署<br>
+      • Agent自进化（记忆&学习）
+    </div>
+    <div class="tools-section">
+      <div class="tools-label">代表工具</div>
+      <div class="tool-tags">
+        <span class="tool-tag t-global">Devin</span>
+        <span class="tool-tag t-global">OpenAI Codex</span>
+        <span class="tool-tag t-ks">KATE (Agents)</span>
+        <span class="tool-tag t-cn">各厂探索中</span>
+      </div>
+    </div>
+    <div class="status-bar">
+      <span class="status-label" style="color:#16a34a">渗透率</span>
+      <div class="status-fill"><div class="fill-inner f3"></div></div>
+      <span class="status-pct" style="color:#16a34a"><2%</span>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-row">
+  <div class="insight-card">
+    <div class="insight-title">竞争已结束</div>
+    <div class="insight-text">L1层代码补全已成基础设施，所有主流IDE内置，不再是差异化能力。</div>
+  </div>
+  <div class="insight-card" style="border-color:#fde68a">
+    <div class="insight-title" style="color:#d97706">2026主战场</div>
+    <div class="insight-text">L2层是最激烈的竞争区。<b>关键瓶颈是上下文工程</b>——让AI理解企业业务、架构、规范。</div>
+  </div>
+  <div class="insight-card" style="border-color:#bbf7d0">
+    <div class="insight-title" style="color:#16a34a">下一个十年</div>
+    <div class="insight-text">L3层需要"平台+Agent+知识"完整闭环，快手KATE是国内最早的体系化尝试。</div>
+  </div>
+</div>
+
+<div class="footer">基于快手"需求AI研发成熟度"模型映射工具能力分层 · 林克制图</div>
+</div></div>
+</body></html>

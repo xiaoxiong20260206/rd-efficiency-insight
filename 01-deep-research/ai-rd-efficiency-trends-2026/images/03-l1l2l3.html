@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1060px;height:580px;overflow:hidden;background:#fff}
+.wb{width:1060px;height:580px;padding:16px;background:#fff}
+.outer{width:1028px;height:548px;background:linear-gradient(135deg,#f0f9ff 0%,#eff6ff 50%,#eef2ff 100%);border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);padding:22px 28px;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;color:#1e293b;border:1px solid #e2e8f0}
+.title{font-size:18px;font-weight:700;text-align:center;margin-bottom:4px}
+.subtitle{font-size:11px;color:#64748b;text-align:center;margin-bottom:14px}
+.levels{display:flex;gap:12px;flex:1;align-items:stretch}
+.level{flex:1;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.l1{border:2px solid #bfdbfe}
+.l2{border:2px solid #fde68a}
+.l3{border:2px solid #bbf7d0}
+.level-badge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:700;margin-bottom:6px;align-self:flex-start}
+.b1{background:#dbeafe;color:#2563eb}.b2{background:#fef3c7;color:#d97706}.b3{background:#dcfce7;color:#16a34a}
+.level-name{font-size:14px;font-weight:700;margin-bottom:2px}
+.level-sub{font-size:10px;color:#64748b;margin-bottom:8px;font-style:italic}
+.row{display:flex;justify-content:space-between;background:#f8fafc;border-radius:6px;padding:6px 10px;margin-bottom:5px;border:1px solid #f1f5f9;align-items:center}
+.row-label{font-size:9px;color:#64748b;flex-shrink:0;width:58px}
+.row-val{font-size:11px;font-weight:600;text-align:right;flex:1}
+.level-desc{font-size:9px;color:#94a3b8;line-height:1.4;margin-top:auto;border-top:1px solid #f1f5f9;padding-top:6px}
+.arrow-row{display:flex;align-items:center;justify-content:center;gap:6px;flex-shrink:0;margin-top:10px}
+.arrow-box{background:#fff;border:1px solid #e2e8f0;border-radius:6px;padding:4px 12px;font-size:10px;color:#64748b;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.arrow-icon{font-size:16px;color:#d97706}
+.bar-section{flex-shrink:0;margin-top:8px}
+.bar-title{font-size:10px;color:#64748b;margin-bottom:4px;text-align:center}
+.people-bar{display:flex;height:20px;border-radius:5px;overflow:hidden;width:100%;border:1px solid #e2e8f0}
+.p1{background:#93c5fd;flex:100}.p2{background:#fde68a;flex:10}.p3{background:#86efac;flex:2}
+.people-labels{display:flex;justify-content:space-between;font-size:9px;color:#64748b;margin-top:3px}
+.footer{flex-shrink:0;text-align:center;font-size:9px;color:#94a3b8;margin-top:6px}
+</style></head><body>
+<div class="wb"><div class="outer">
+<div class="title">需求AI研发成熟度：L1 → L2 → L3</div>
+<div class="subtitle">快手研发效能团队定义 · 已成为业界标准分级框架</div>
+<div class="levels">
+  <div class="level l1">
+    <div class="level-badge b1">L1 AI辅助</div>
+    <div class="level-name" style="color:#2563eb">Copilot</div>
+    <div class="level-sub">人主导，AI辅助</div>
+    <div class="row"><span class="row-label">AI介入</span><span class="row-val" style="color:#2563eb">仅编码环节</span></div>
+    <div class="row"><span class="row-label">人的角色</span><span class="row-val" style="color:#2563eb">全流程执行者</span></div>
+    <div class="row"><span class="row-label">提效幅度</span><span class="row-val" style="color:#2563eb">编码周期 ↑10-20%</span></div>
+    <div class="row"><span class="row-label">AI渗透率</span><span class="row-val" style="color:#2563eb">10%-50%</span></div>
+    <div class="row"><span class="row-label">实际覆盖</span><span class="row-val" style="color:#2563eb">~100%</span></div>
+    <div class="level-desc">所有人的日常。AI补全代码片段，人负责其他一切。编码时间节省，但整体交付几乎不变。</div>
+  </div>
+  <div class="level l2">
+    <div class="level-badge b2">L2 AI协同</div>
+    <div class="level-name" style="color:#d97706">Agent</div>
+    <div class="level-sub">深度协作，分阶段主导</div>
+    <div class="row"><span class="row-label">AI介入</span><span class="row-val" style="color:#d97706">需求→设计→编码→测试→CR</span></div>
+    <div class="row"><span class="row-label">人的角色</span><span class="row-val" style="color:#d97706">执行者→协调者</span></div>
+    <div class="row"><span class="row-label">提效幅度</span><span class="row-val" style="color:#d97706">需求周期 ↑20-40%+</span></div>
+    <div class="row"><span class="row-label">AI渗透率</span><span class="row-val" style="color:#d97706">≥50%</span></div>
+    <div class="row"><span class="row-label">实际覆盖</span><span class="row-val" style="color:#d97706"><10%</span></div>
+    <div class="level-desc">绝大多数人尚未使用。人做关键决策，AI执行具体任务。效率提升显著但需方法论支撑。</div>
+  </div>
+  <div class="level l3">
+    <div class="level-badge b3">L3 AI自主</div>
+    <div class="level-name" style="color:#16a34a">Agentic</div>
+    <div class="level-sub">人如PM，AI如开发团队</div>
+    <div class="row"><span class="row-label">AI介入</span><span class="row-val" style="color:#16a34a">端到端交付</span></div>
+    <div class="row"><span class="row-label">人的角色</span><span class="row-val" style="color:#16a34a">开发者→PM+架构师</span></div>
+    <div class="row"><span class="row-label">提效幅度</span><span class="row-val" style="color:#16a34a">端到端大幅缩短</span></div>
+    <div class="row"><span class="row-label">AI渗透率</span><span class="row-val" style="color:#16a34a">≥80%</span></div>
+    <div class="row"><span class="row-label">实际覆盖</span><span class="row-val" style="color:#16a34a"><2%</span></div>
+    <div class="level-desc">极少数先行者。AI自主决策，人做验收和方向把控。改变协同范式。</div>
+  </div>
+</div>
+<div class="arrow-row">
+  <div class="arrow-box">理论：100%需求可L1</div><div class="arrow-icon">→</div>
+  <div class="arrow-box">50-70%可升级到L2</div><div class="arrow-icon">→</div>
+  <div class="arrow-box">2-10%可升级到L3</div>
+</div>
+<div class="bar-section">
+  <div class="bar-title">实际使用分布（2025年）</div>
+  <div class="people-bar"><div class="p1"></div><div class="p2"></div><div class="p3"></div></div>
+  <div class="people-labels"><span>L1: ~100%</span><span>L2: <10%</span><span>L3: <2%</span></div>
+</div>
+<div class="footer">需求AI研发成熟度模型 · 快手研发效能团队 · 林克制图</div>
+</div></div>
+</body></html>

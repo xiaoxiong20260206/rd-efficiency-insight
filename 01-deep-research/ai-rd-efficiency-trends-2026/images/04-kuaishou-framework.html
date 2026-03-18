@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1060px;height:720px;overflow:hidden;background:#fff}
+.wb{width:1060px;height:720px;padding:16px;background:#fff}
+.outer{width:1028px;height:688px;background:linear-gradient(135deg,#f8fafc 0%,#eef2ff 50%,#f0f9ff 100%);border-radius:16px;box-shadow:0 2px 12px rgba(0,0,0,.06);padding:20px 24px;display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC",sans-serif;color:#1e293b;border:1px solid #e2e8f0}
+.title{font-size:17px;font-weight:700;text-align:center;margin-bottom:2px}
+.subtitle{font-size:10px;color:#64748b;text-align:center;margin-bottom:12px}
+.main{display:flex;gap:12px;flex:1;min-height:0}
+.col-left{width:320px;display:flex;flex-direction:column;gap:8px;flex-shrink:0}
+.col-right{flex:1;display:flex;flex-direction:column;gap:8px}
+.card{background:#fff;border-radius:10px;border:1px solid #e2e8f0;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.03)}
+.card-title{font-size:11px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:5px}
+.badge{display:inline-block;padding:2px 6px;border-radius:4px;font-size:9px;font-weight:600}
+.b-blue{background:#dbeafe;color:#2563eb}.b-amber{background:#fef3c7;color:#d97706}.b-green{background:#dcfce7;color:#16a34a}.b-purple{background:#ede9fe;color:#7c3aed}.b-red{background:#fee2e2;color:#dc2626}.b-teal{background:#ccfbf1;color:#0d9488}
+.row{display:flex;align-items:center;gap:6px;font-size:9.5px;line-height:1.5;color:#475569}
+.row+.row{margin-top:3px}
+.dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.d-blue{background:#3b82f6}.d-amber{background:#f59e0b}.d-green{background:#22c55e}.d-purple{background:#8b5cf6}.d-red{background:#ef4444}.d-teal{background:#14b8a6}
+.timeline{display:flex;gap:4px;align-items:stretch}
+.t-item{flex:1;background:#fff;border-radius:8px;border:1px solid #e2e8f0;padding:6px 8px;text-align:center;position:relative}
+.t-item .t-year{font-size:9px;color:#94a3b8;font-weight:600}
+.t-item .t-name{font-size:10px;font-weight:700;margin:2px 0}
+.t-item .t-desc{font-size:8px;color:#64748b;line-height:1.3}
+.t-arrow{display:flex;align-items:center;font-size:14px;color:#d97706;flex-shrink:0}
+.products{display:flex;gap:6px}
+.p-item{flex:1;background:#fff;border-radius:8px;border:1px solid #e2e8f0;padding:8px;text-align:center}
+.p-name{font-size:11px;font-weight:700;margin-bottom:2px}
+.p-role{font-size:8px;color:#64748b}
+.p-data{font-size:9px;color:#2563eb;font-weight:600;margin-top:3px}
+.metric-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.m-item{background:#f8fafc;border-radius:6px;padding:5px 8px;border:1px solid #f1f5f9}
+.m-label{font-size:8px;color:#94a3b8}
+.m-val{font-size:12px;font-weight:700}
+.m-val.blue{color:#2563eb}.m-val.green{color:#16a34a}.m-val.amber{color:#d97706}.m-val.red{color:#dc2626}
+.levels-row{display:flex;gap:4px}
+.l-item{flex:1;border-radius:6px;padding:5px 8px;text-align:center}
+.l1{background:#dbeafe;border:1px solid #bfdbfe}.l2{background:#fef3c7;border:1px solid #fde68a}.l3{background:#dcfce7;border:1px solid #bbf7d0}
+.l-name{font-size:10px;font-weight:700}.l-sub{font-size:8px;color:#64748b}
+.footer{text-align:center;font-size:8px;color:#94a3b8;margin-top:4px;flex-shrink:0}
+.highlight{background:linear-gradient(135deg,#eff6ff,#eef2ff);border:1.5px solid #bfdbfe}
+.section-label{font-size:9px;color:#94a3b8;font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.5px}
+</style></head><body>
+<div class="wb"><div class="outer">
+<div class="title">快手AI研发效能体系：为什么值得重点关注</div>
+<div class="subtitle">业界最严格度量 × Top-Down体系化落地 × 五年基建复利</div>
+
+<div class="main">
+<div class="col-left">
+  <!-- 度量体系 -->
+  <div class="card highlight" style="flex:1">
+    <div class="card-title"><span class="badge b-red">核心优势1</span> 度量最准</div>
+    <div class="row"><span class="dot d-red"></span><b>分母</b>：入库Commit新增代码行（非生成总量）</div>
+    <div class="row"><span class="dot d-red"></span><b>分子</b>：编辑距离<50%的AI代码（非点击接受）</div>
+    <div class="row"><span class="dot d-red"></span><b>方式</b>：离线数据层逐行比对（非客户端统计）</div>
+    <div style="background:#fef2f2;border-radius:6px;padding:5px 8px;margin-top:6px;font-size:9px;color:#991b1b;line-height:1.4">
+      <b>快手坦承</b>："业界披露的代码生成率基本不置信"<br>
+      腾讯50%（辅助即算）≈ 百度40%+（宽松口径）> 快手30%+（严格口径）<br>
+      <b>统一口径后，快手30%+可能是最高的</b>
+    </div>
+  </div>
+  <!-- 四级落地 -->
+  <div class="card highlight" style="flex:1.2">
+    <div class="card-title"><span class="badge b-purple">核心优势2</span> Top-Down体系化落地</div>
+    <div class="row"><span class="dot d-purple"></span><b>L1 公司级</b>：效能委员会 + "211"战略打法</div>
+    <div class="row"><span class="dot d-purple"></span><b>L2 业务线</b>：白盒拆解→热力图→ROI→标杆复制</div>
+    <div class="row"><span class="dot d-purple"></span><b>L3 团队级</b>：实践+工具+管理 三位一体</div>
+    <div class="row"><span class="dot d-purple"></span><b>L4 个人级</b>：L1全员→L2试点→L3小需求</div>
+    <div style="background:#f5f3ff;border-radius:6px;padding:5px 8px;margin-top:6px;font-size:9px;color:#5b21b6;line-height:1.4">
+      <b>关键差异</b>：其他公司 = 买工具让大家用<br>
+      快手 = 从战略→度量→平台→方法论→人才的完整闭环
+    </div>
+  </div>
+  <!-- 核心数据 -->
+  <div class="card" style="flex-shrink:0">
+    <div class="card-title"><span class="badge b-teal">核心数据</span> 2025年实证</div>
+    <div class="metric-grid">
+      <div class="m-item"><div class="m-label">AI代码生成率</div><div class="m-val blue">30.37%</div></div>
+      <div class="m-item"><div class="m-label">标杆交付周期↓</div><div class="m-val green">58%</div></div>
+      <div class="m-item"><div class="m-label">AI CR生成率</div><div class="m-val amber">44.49%</div></div>
+      <div class="m-item"><div class="m-label">AI用例生成率</div><div class="m-val red">52.43%</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-right">
+  <!-- 五年演进 -->
+  <div class="card" style="flex-shrink:0">
+    <div class="card-title"><span class="badge b-amber">五年基建复利</span> 2021 → 2025</div>
+    <div class="timeline">
+      <div class="t-item"><div class="t-year">2021-22</div><div class="t-name" style="color:#64748b">平台化</div><div class="t-desc">研发全流程在线<br>覆盖率>95%</div></div>
+      <div class="t-arrow">→</div>
+      <div class="t-item"><div class="t-year">2022-23</div><div class="t-name" style="color:#64748b">数字化</div><div class="t-desc">度量体系建设<br>北极星指标</div></div>
+      <div class="t-arrow">→</div>
+      <div class="t-item"><div class="t-year">2023-24</div><div class="t-name" style="color:#d97706">精益化</div><div class="t-desc">人均交付+80%<br>利滚利</div></div>
+      <div class="t-arrow">→</div>
+      <div class="t-item"><div class="t-year">2024-25</div><div class="t-name" style="color:#2563eb">智能化1.0</div><div class="t-desc">AI辅助编码<br>30%+代码率</div></div>
+      <div class="t-arrow">→</div>
+      <div class="t-item" style="border-color:#2563eb;background:#eff6ff"><div class="t-year">2025→</div><div class="t-name" style="color:#2563eb">智能化2.0</div><div class="t-desc">范式跃迁<br>L1→L2→L3</div></div>
+    </div>
+  </div>
+  <!-- 三位一体产品矩阵 -->
+  <div class="card" style="flex-shrink:0">
+    <div class="card-title"><span class="badge b-blue">三位一体</span> 产品矩阵</div>
+    <div class="products">
+      <div class="p-item" style="border-color:#bfdbfe"><div class="p-name" style="color:#2563eb">KAT-Coder</div><div class="p-role">自研编程大模型</div><div class="p-data">SWE-bench 73.4%</div></div>
+      <div class="p-item" style="border-color:#fde68a"><div class="p-name" style="color:#d97706">CodeFlicker</div><div class="p-role">智能开发工具</div><div class="p-data">IDE+CLI+Web</div></div>
+      <div class="p-item" style="border-color:#bbf7d0"><div class="p-name" style="color:#16a34a">万擎MaaS</div><div class="p-role">模型即服务平台</div><div class="p-data">统一算力调度</div></div>
+    </div>
+  </div>
+  <!-- 下一代平台 KATE -->
+  <div class="card" style="flex:1">
+    <div class="card-title"><span class="badge b-green">下一代</span> KATE 智能研发平台</div>
+    <div style="display:flex;gap:5px">
+      <div style="flex:1;background:#f0fdf4;border-radius:6px;padding:6px 8px;border:1px solid #bbf7d0;text-align:center">
+        <div style="font-size:10px;font-weight:700;color:#16a34a">AI Studio</div>
+        <div style="font-size:8px;color:#64748b">AI时代工作台</div>
+      </div>
+      <div style="flex:1;background:#eff6ff;border-radius:6px;padding:6px 8px;border:1px solid #bfdbfe;text-align:center">
+        <div style="font-size:10px;font-weight:700;color:#2563eb">Flow</div>
+        <div style="font-size:8px;color:#64748b">需求交付工作流</div>
+      </div>
+      <div style="flex:1;background:#fef3c7;border-radius:6px;padding:6px 8px;border:1px solid #fde68a;text-align:center">
+        <div style="font-size:10px;font-weight:700;color:#d97706">Agents</div>
+        <div style="font-size:8px;color:#64748b">研发Agent生态</div>
+      </div>
+      <div style="flex:1;background:#f5f3ff;border-radius:6px;padding:6px 8px;border:1px solid #c4b5fd;text-align:center">
+        <div style="font-size:10px;font-weight:700;color:#7c3aed">Mind</div>
+        <div style="font-size:8px;color:#64748b">Agent自进化底座</div>
+      </div>
+    </div>
+  </div>
+  <!-- L1/L2/L3 + 路线图 -->
+  <div class="card" style="flex-shrink:0">
+    <div class="card-title"><span class="badge b-amber">三年路线</span> 2026 → 2028+</div>
+    <div class="levels-row">
+      <div class="l-item l1"><div class="l-name" style="color:#2563eb">2026 智能化2.0</div><div class="l-sub">L2+: 5%→80%<br>L3: 1%→5%</div></div>
+      <div class="l-item l2"><div class="l-name" style="color:#d97706">2027 智能化3.0</div><div class="l-sub">L2+: 100%<br>L3: 10%+</div></div>
+      <div class="l-item l3"><div class="l-name" style="color:#16a34a">2028+ 智能化4.0</div><div class="l-sub">L3: 50%+<br>AI自主研发</div></div>
+    </div>
+  </div>
+  <!-- 11个Agent -->
+  <div class="card" style="flex:1">
+    <div class="card-title"><span class="badge b-teal">11个AI Agent</span> 覆盖DevOps全生命周期</div>
+    <div style="display:flex;flex-wrap:wrap;gap:3px">
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">DeepWiki代码理解</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能代码生成 30%+</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能需求分析</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能技术设计</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能单测 89%采纳</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能CR 54%采纳</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能用例 66%采纳</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能Mock</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能测试执行</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能UI走查</span>
+      <span style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:4px;padding:2px 6px;font-size:8px;color:#0d9488">智能变更分析</span>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">快手AI研发效能体系全景 · 基于19篇内部文档提炼 · 林克制图</div>
+</div></div>
+</body></html>
