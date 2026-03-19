@@ -50,5 +50,5 @@ rd-efficiency-Insight/
 |------|------|
 | `AI-Insight/` | 同级平行项目，AI行业领域 |
 | `ai-research/` | 独立调研报告合集，部分报告与研效相关 |
-| `codeflicker-homepage/` | 林克首页，通过 hub.html 链接到本项目 |
+| `link-homepage/` | 林克首页，通过 hub.html 链接到本项目 |
 | `knowledge/rd-efficiency` | symlink 指向本项目 `02-knowledge-base/`，保持兼容 |

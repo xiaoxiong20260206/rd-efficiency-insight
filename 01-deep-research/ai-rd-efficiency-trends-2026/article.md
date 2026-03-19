@@ -264,4 +264,4 @@ DORA报告显示，**90%的高效能组织已采用内部平台**。平台不只
 
 这本身就是AI × 研发效能最好的注脚。
 
-> 完整交互式报告（含可视化图表）：https://my-ai-research-lab.github.io/codeflicker-homepage/rd-efficiency/insights/ai-rd-efficiency-trends-2026/
+> 完整交互式报告（含可视化图表）：https://my-ai-research-lab.github.io/link-homepage/rd-efficiency/insights/ai-rd-efficiency-trends-2026/
