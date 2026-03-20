@@ -1185,9 +1185,6 @@ button:focus-visible {
             <button class="tab-btn" data-tab="tab5" role="tab" aria-selected="false" aria-controls="tab5">
                 <span class="tab-btn-num">5</span>阶段4：业务AI化跃迁
             </button>
-            <button class="tab-btn" data-tab="tab6" role="tab" aria-selected="false" aria-controls="tab6">
-                <span class="tab-btn-num">6</span>度量指标体系
-            </button>
         </nav>
 
         <!-- 主内容区域 -->
@@ -1832,21 +1829,124 @@ button:focus-visible {
         </div>
     </div>
 
-    <!-- 应该做什么 -->
+    <!-- 目标：这个阶段要达成什么 -->
     <div class="section-card">
         <div class="section-header">
             <span class="section-number">1</span>
-            <h2 class="section-title">应该做什么：三件事，不多不少</h2>
+            <h2 class="section-title">目标：让AI变成肌肉记忆</h2>
         </div>
         <div class="section-content">
             <p>阶段一的目标非常明确——<span class="text-bold">让AI工具进入每个人的工作流，形成基本的使用习惯</span>。不要试图在这个阶段追求"生产率飞跃"，那是后面阶段的事。</p>
 
             <div class="insight-box">
-                <div class="insight-title">阶段一的三件事</div>
-                <p><span class="text-bold">1. 统一AI入口</span>——建设基础设施，让工具"可用"<br/>
-                <span class="text-bold">2. 安全与合规</span>——解除使用顾虑，让员工"敢用"<br/>
-                <span class="text-bold">3. 培训与激励</span>——降低使用门槛，让员工"想用"</p>
+                <div class="insight-title">阶段一目标：三个"让"</div>
+                <p><span class="text-bold">1. 让工具可用</span>——统一AI入口，建设基础设施<br/>
+                <span class="text-bold">2. 让员工敢用</span>——安全与合规框架，解除顾虑<br/>
+                <span class="text-bold">3. 让员工想用</span>——培训与激励，降低门槛</p>
             </div>
+
+            <p style="margin-top: 12px;">阶段一的成功标准是：<span class="text-bold">"问每个人上周用AI做了什么，人人都能说出具体场景"</span>——这说明AI已经变成了工作的一部分，而非"额外的工具"。</p>
+        </div>
+    </div>
+
+    <!-- 度量：如何衡量成功 -->
+    <div class="section-card">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">度量：如何知道阶段一成功了</h2>
+        </div>
+        <div class="section-content">
+            <p>阶段一的核心问题是<span class="text-bold">"工具有没有被用起来"</span>。此时谈效率提升为时尚早，度量应聚焦于"采纳"而非"产出"。</p>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.1 结果指标（北极星）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>指标名称</th>
+                        <th>定义</th>
+                        <th>目标值</th>
+                        <th>数据来源</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="text-bold">周活跃使用率</span></td>
+                        <td>每周至少使用1次AI工具的员工占比</td>
+                        <td><span class="tag tag-green">≥ 80%</span></td>
+                        <td>工具后台统计</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-bold">安全合规达标率</span></td>
+                        <td>符合AI使用规范的行为占比</td>
+                        <td><span class="tag tag-green">100%</span></td>
+                        <td>安全审计日志</td>
+                    </tr>
+                    <tr>
+                        <td><span class="text-bold">统一入口覆盖率</span></td>
+                        <td>通过统一平台使用AI的占比</td>
+                        <td><span class="tag tag-green">≥ 90%</span></td>
+                        <td>平台统计</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 过程指标（执行健康度）</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>指标名称</th>
+                        <th>监控频率</th>
+                        <th>预警阈值</th>
+                        <th>应对措施</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>培训完成率</td>
+                        <td>月</td>
+                        <td>&lt; 90% 需追踪</td>
+                        <td>强化培训覆盖</td>
+                    </tr>
+                    <tr>
+                        <td>工具满意度NPS</td>
+                        <td>季度</td>
+                        <td>NPS &lt; 30 需优化</td>
+                        <td>收集反馈改进体验</td>
+                    </tr>
+                    <tr>
+                        <td>问题工单量</td>
+                        <td>周</td>
+                        <td>周增长 &gt; 20%</td>
+                        <td>加强支持力量</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.3 评估模型：采纳漏斗</h3>
+            <div class="insight-box">
+                <div class="insight-title">采纳漏斗模型（Adoption Funnel）</div>
+                <p>用漏斗模型诊断工具普及的卡点：</p>
+                <p style="margin-top: 8px;">
+                <span class="text-bold">知晓</span>（知道有这个工具）→ <span class="text-bold">获取</span>（能获得使用权限）→ <span class="text-bold">尝试</span>（第一次使用）→ <span class="text-bold">活跃</span>（持续使用）→ <span class="text-bold">推荐</span>（推荐给同事）</p>
+                <p style="margin-top: 8px;">每个环节的转化率都要监控。<span class="text-bold">如果"知晓→获取"转化低</span>，说明权限流程有问题；<span class="text-bold">如果"尝试→活跃"转化低</span>，说明工具体验或培训有问题。</p>
+            </div>
+
+            <div class="quote-box" style="margin-top: 16px;">
+                <p class="quote-text">"Our AI Transformation Index reveals that companies with 80%+ tool penetration are 3x more likely to achieve measurable productivity gains in the next phase."</p>
+                <p class="quote-author">—— Deloitte, AI Transformation Index 2026</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 实施：具体怎么做 -->
+    <div class="section-card">
+        <div class="section-header">
+            <span class="section-number">3</span>
+            <h2 class="section-title">实施：三件事 + 90天路线</h2>
+        </div>
+        <div class="section-content">
+            <h3 style="font-size: 15px; color: var(--color-text-primary);">3.1 统一AI入口：建设"AI工厂"而非散装工具</h3>
+            <p>MIT SMR 2026年指出，领先企业正在从"给每个人发一个Copilot License"升级为构建<span class="text-bold">"AI工厂"（AI Factory）</span>——一套标准化的技术平台、方法、数据和预构建能力，让AI使用像用水用电一样自然。</p>
 
             <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.1 统一AI入口：建设"AI工厂"而非散装工具</h3>
             <p>MIT SMR 2026年指出，领先企业正在从"给每个人发一个Copilot License"升级为构建<span class="text-bold">"AI工厂"（AI Factory）</span>——一套标准化的技术平台、方法、数据和预构建能力，让AI使用像用水用电一样自然。</p>
@@ -1937,16 +2037,8 @@ button:focus-visible {
             </table>
 
             <p style="margin-top: 16px;">激励方面，麦肯锡中国的变革管理案例给出了四层机制：认知统一 → 技能提升 → 机制嵌入 → 成效追踪，通过"<span class="text-bold">人人打造AI Agent</span>"的内部活动，鼓励全体员工亲手搭建应用。</p>
-        </div>
-    </div>
 
-    <!-- 具体怎么做 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">2</span>
-            <h2 class="section-title">具体怎么做：90天落地路线</h2>
-        </div>
-        <div class="section-content">
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.4 90天落地路线</h3>
             <table>
                 <thead>
                     <tr>
@@ -1979,67 +2071,41 @@ button:focus-visible {
             </table>
 
             <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">PwC的核心建议："Go Narrow and Deep"</div>
-                <p>PwC 2026报告强调：不要试图一次性覆盖所有场景。<span class="text-bold">让高层选定少数高价值工作流，聚焦做透，而非撒胡椒面。</span>成功的秘诀是"派你的A队上场"——把最优秀的人才放到AI重点领域，而非让每个人都小打小闹。</p>
+                <div class="insight-title">PwC核心建议："Go Narrow and Deep"</div>
+                <p>不要试图一次性覆盖所有场景。<span class="text-bold">让高层选定少数高价值工作流，聚焦做透，而非撒胡椒面。</span>成功的秘诀是"派你的A队上场"——把最优秀的人才放到AI重点领域，而非让每个人都小打小闹。</p>
             </div>
-        </div>
-    </div>
 
-    <!-- 能带来哪些变化 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">3</span>
-            <h2 class="section-title">能带来哪些变化</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段一完成后，你应该能观察到这些变化：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>变化前</th>
-                        <th>变化后</th>
-                        <th>衡量指标</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>使用习惯</td>
-                        <td>AI是"额外的工具"</td>
-                        <td>AI是"默认的工作方式"</td>
-                        <td>周活跃率 > 80%</td>
-                    </tr>
-                    <tr>
-                        <td>心智模式</td>
-                        <td>"AI能帮我做什么？"</td>
-                        <td>"这件事不用AI是不是太慢了？"</td>
-                        <td>员工调查NPS > 40</td>
-                    </tr>
-                    <tr>
-                        <td>技能底线</td>
-                        <td>个别人会用AI</td>
-                        <td>全员具备基本AI流利度</td>
-                        <td>基础培训通过率 > 90%</td>
-                    </tr>
-                    <tr>
-                        <td>基础设施</td>
-                        <td>工具孤岛，各自为政</td>
-                        <td>统一AI平台 + 安全合规框架</td>
-                        <td>平台覆盖率 100%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">阶段一的限度——诚实面对</div>
-                <p>阶段一完成后，你<span class="text-bold">不应该</span>期望看到：</p>
-                <ul style="margin-top: 8px; padding-left: 20px;">
-                    <li>交付周期显著缩短（那需要阶段二的工作流重设计）</li>
-                    <li>团队规模优化（那需要阶段三的结构调整）</li>
-                    <li>业务模式创新（那需要阶段四的战略重塑）</li>
-                </ul>
-                <p style="margin-top: 8px;">如果你在阶段一就试图追求这些结果，要么会失望，要么会制造"假数据"。<span class="text-bold">阶段一的成功标准是"让AI变成肌肉记忆"——这已经足够了。</span></p>
+            <div class="paths-container" style="margin-top: 20px;">
+                <div class="right-path">
+                    <div class="path-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#059669" stroke-width="2"/>
+                            <path d="M6 10L9 13L14 7" stroke="#059669" stroke-width="2"/>
+                        </svg>
+                        阶段一完成的标志
+                    </div>
+                    <ul class="path-list">
+                        <li>周活跃率 > 80%，人人都在用</li>
+                        <li>AI变成"默认的工作方式"而非"额外工具"</li>
+                        <li>员工调查NPS > 40，满意度高</li>
+                        <li>统一AI平台 + 安全合规框架就绪</li>
+                    </ul>
+                </div>
+                <div class="wrong-path">
+                    <div class="path-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#E11D48" stroke-width="2"/>
+                            <path d="M6 6L14 14M14 6L6 14" stroke="#E11D48" stroke-width="2"/>
+                        </svg>
+                        阶段一的局限——诚实面对
+                    </div>
+                    <ul class="path-list">
+                        <li>不应期望交付周期显著缩短（需阶段二）</li>
+                        <li>不应期望团队规模优化（需阶段三）</li>
+                        <li>不应期望业务模式创新（需阶段四）</li>
+                        <li><span class="text-bold">阶段一成功="AI变成肌肉记忆"</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -2120,11 +2186,11 @@ button:focus-visible {
         </div>
     </div>
 
-    <!-- 应该做什么 -->
+    <!-- 目标：这个阶段要达成什么 -->
     <div class="section-card">
         <div class="section-header">
             <span class="section-number">1</span>
-            <h2 class="section-title">应该做什么：从"人人会用"到"工种重塑"</h2>
+            <h2 class="section-title">目标：让每个工种找到AI原生工作方式</h2>
         </div>
         <div class="section-content">
             <p>阶段一解决了"能不能用起来"的问题。阶段二要解决的是——<span class="text-bold">每个工种如何与AI深度协同，让工作方式发生质变而非量变</span>。这是最容易被误解的阶段：很多企业以为"大家都在用AI"就算转型了，但PwC 2026报告尖锐指出——</p>
@@ -2135,58 +2201,96 @@ button:focus-visible {
             </div>
 
             <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">阶段二的三件事</div>
+                <div class="insight-title">阶段二的三个核心目标</div>
                 <p><span class="text-bold">1. 工种工作流重设计</span>——不是"AI辅助旧流程"，而是"AI原生新流程"<br/>
-                <span class="text-bold">2. 分工种AI成熟度评估</span>——用L1/L2/L3模型定位每个工种的AI化水平<br/>
+                <span class="text-bold">2. 关键工种效率翻倍</span>——交付周期缩短50%+，而非仅提速20-30%<br/>
                 <span class="text-bold">3. Agentic工作流落地</span>——让Agent接管重复性专业任务</p>
             </div>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.1 工种工作流重设计：问"如何从零设计"，而非"AI放在哪里"</h3>
-            <p>回到智能手机类比：每个人都有了智能手机，摄影师开始用手机拍照、记者用手机写稿——每个工种的工作方式被重新定义，但团队协作模式还没变。同理，如果一个PM还是按“写PRD → 评审 → 排期 → 跟进”的流程工作，只是用AI“加速写PRD”，那效率提升可能只有20-30%。</p>
-            <p style="margin-top: 12px;">但如果从头设计一个<span class="text-bold">AI原生的PM工作流</span>呢？</p>
+            <p style="margin-top: 12px;">阶段二的成功标准是：<span class="text-bold">"问一个工种的工作流程，发现和一年前完全不同"</span>——这说明工作方式真正发生了质变，而非只是"快了一点"。</p>
+        </div>
+    </div>
 
+    <!-- 度量：如何衡量成功 -->
+    <div class="section-card">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">度量：如何知道阶段二成功了</h2>
+        </div>
+        <div class="section-content">
+            <p>阶段二的核心问题是<span class="text-bold">"各工种有没有建立AI原生工作流"</span>。不是看个人用得多不多，而是看工种级别的系统性变化。</p>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.1 结果指标（北极星）</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>环节</th>
-                        <th>传统流程</th>
-                        <th>AI辅助（阶段一）</th>
-                        <th>AI原生（阶段二）</th>
+                        <th>指标名称</th>
+                        <th>定义</th>
+                        <th>目标值</th>
+                        <th>计算方式</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>需求发现</td>
-                        <td>用户访谈 + 竞品调研</td>
-                        <td>AI辅助写调研问卷</td>
-                        <td>Agent自动抓取用户反馈、竞品动态，生成需求洞察</td>
+                        <td><span class="text-bold">关键工种效率提升</span></td>
+                        <td>单工种完成相同任务的时间缩短比例</td>
+                        <td><span class="tag tag-green">≥ 50%</span></td>
+                        <td>任务时间基线对比</td>
                     </tr>
                     <tr>
-                        <td>需求定义</td>
-                        <td>PM独立撰写PRD</td>
-                        <td>AI帮写PRD初稿</td>
-                        <td>Agent基于需求洞察直接生成PRD + 原型 + 测试用例</td>
+                        <td><span class="text-bold">AI工作流SOP覆盖率</span></td>
+                        <td>已建立AI原生工作流的工种数 / 总工种数</td>
+                        <td><span class="tag tag-green">≥ 80%</span></td>
+                        <td>SOP文档统计</td>
                     </tr>
                     <tr>
-                        <td>进度管理</td>
-                        <td>每日站会 + 手动更新</td>
-                        <td>AI总结会议纪要</td>
-                        <td>Agent实时同步进度，异常自动预警和干预建议</td>
-                    </tr>
-                    <tr>
-                        <td>效果验证</td>
-                        <td>上线后手动分析</td>
-                        <td>AI辅助数据分析</td>
-                        <td>Agent自动追踪指标，生成归因分析和迭代建议</td>
+                        <td><span class="text-bold">关键工种Agent覆盖率</span></td>
+                        <td>核心流程有Agent参与的工种占比</td>
+                        <td><span class="tag tag-green">≥ 60%</span></td>
+                        <td>流程审计</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p style="margin-top: 16px;">BCG 2026报告指出：在AI原生模式下，<span class="text-bold">一个PM的覆盖范围可以扩大4-6倍</span>。这不是"PM用AI快了30%"，而是"PM的工作本质变了"——从"执行者"变成"指挥官"。</p>
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 分工种过程指标</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>工种</th>
+                        <th>核心过程指标</th>
+                        <th>目标值</th>
+                        <th>注意事项</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="tag tag-blue">研发</span></td>
+                        <td>AI代码采纳率、编码周期缩短</td>
+                        <td>采纳率 ≥ 25%，周期 -30%</td>
+                        <td>采纳率高但周期不变说明有问题</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag tag-green">测试</span></td>
+                        <td>AI用例生成率、自动化覆盖率</td>
+                        <td>生成率 ≥ 50%，覆盖 ≥ 70%</td>
+                        <td>关注用例质量，不只是数量</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag tag-orange">产品</span></td>
+                        <td>AI辅助PRD比例、需求澄清轮次减少</td>
+                        <td>辅助 ≥ 60%，轮次 -40%</td>
+                        <td>PRD质量需额外评估</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tag tag-purple">设计</span></td>
+                        <td>AI设计稿采用率、设计周期缩短</td>
+                        <td>采用 ≥ 40%，周期 -35%</td>
+                        <td>创意质量需人工评估</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.2 分工种AI成熟度评估：L1/L2/L3模型</h3>
-            <p>不同工种的AI化路径和速度不同。以下三级模型可以帮助定位每个工种当前在什么水平、下一步应该做什么：</p>
-
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.3 评估模型：L1/L2/L3成熟度 + 工种效能矩阵</h3>
             <table>
                 <thead>
                     <tr>
@@ -2207,48 +2311,74 @@ button:focus-visible {
                         <td><span class="tag tag-orange">L2 AI协同</span></td>
                         <td>AI参与关键决策</td>
                         <td>人+AI协作，工作流重设计</td>
-                        <td>AI生成方案 + 人审核决策、Agent自动执行子流程</td>
+                        <td>AI生成方案 + 人审核决策</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-green">L3 AI自主</span></td>
                         <td>AI独立完成子任务</td>
-                        <td>Agent端到端执行，人只做监督和异常处理</td>
-                        <td>Agent自动化测试、Agent自动运维、Agent自动客服</td>
+                        <td>Agent端到端执行，人只做监督</td>
+                        <td>Agent自动化测试、自动运维</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.3 Agentic工作流落地：PwC的"Spell It Out"原则</h3>
-            <p>PwC 2026报告给出了一个关键方法论：在设计Agentic工作流时，必须<span class="text-bold">逐步骤写清楚</span>——哪些步骤由Agent主导，哪些由人主导，哪些是人机协作，以及每一步的监督机制。</p>
-
             <div class="insight-box" style="margin-top: 16px;">
-                <div class="insight-title">PwC "Spell It Out" 工作流设计框架</div>
-                <p>对于每个关键工作流中的每一步，明确回答四个问题：</p>
-                <ul style="margin-top: 8px; padding-left: 20px;">
-                    <li><span class="text-bold">谁主导？</span> Agent独立执行 / 人独立执行 / 人机协作</li>
-                    <li><span class="text-bold">谁监督？</span> 人工Review / 另一个Agent交叉检查 / 自动化测试</li>
-                    <li><span class="text-bold">何时升级？</span> 什么条件下需要人工介入</li>
-                    <li><span class="text-bold">如何回滚？</span> 出错时的恢复机制</li>
-                </ul>
-            </div>
-
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"Built-in monitoring also includes different agents checking each other's work, and for higher-risk scenarios, these agents come from different model providers."</p>
-                <p class="quote-author">—— PwC, 2026 AI Business Predictions</p>
+                <div class="insight-title">工种效能矩阵（2×2诊断）</div>
+                <p><span class="text-bold">横轴</span>：AI工具使用深度（浅用 vs 深度集成）<br/>
+                <span class="text-bold">纵轴</span>：效率提升幅度（低 vs 高）</p>
+                <p style="margin-top: 8px;">
+                • <span class="text-bold">右上象限（深度+高效）</span>：标杆工种，可复制推广<br/>
+                • <span class="text-bold">左上象限（浅用+高效）</span>：天花板近，需深化<br/>
+                • <span class="text-bold">右下象限（深度+低效）</span>：方向错误，需重新审视<br/>
+                • <span class="text-bold">左下象限（浅用+低效）</span>：需要更多赋能和培训</p>
             </div>
         </div>
     </div>
 
-    <!-- 具体怎么做 -->
+    <!-- 实施：具体怎么做 -->
     <div class="section-card">
         <div class="section-header">
-            <span class="section-number">2</span>
-            <h2 class="section-title">具体怎么做：分工种AI化重塑路线图</h2>
+            <span class="section-number">3</span>
+            <h2 class="section-title">实施：分工种AI化重塑路线图</h2>
         </div>
         <div class="section-content">
             <p>阶段二不是"全员齐步走"，而是<span class="text-bold">按工种分批推进</span>。不同工种的AI化难度和ROI不同，应该优先攻克高ROI、低复杂度的工种。</p>
 
-            <h3 style="margin-top: 20px; font-size: 16px; color: var(--color-text-primary);">2.1 典型工种AI化重塑路径</h3>
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">3.1 工作流重设计核心方法</h3>
+            <p>不是问"AI放在哪里"，而是问<span class="text-bold">"如果从零设计，怎么做"</span>。以PM为例：</p>
+            <table style="margin-top: 8px;">
+                <thead>
+                    <tr>
+                        <th>环节</th>
+                        <th>传统流程</th>
+                        <th>AI辅助（阶段一）</th>
+                        <th>AI原生（阶段二目标）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>需求发现</td>
+                        <td>用户访谈 + 竞品调研</td>
+                        <td>AI辅助写调研问卷</td>
+                        <td>Agent自动抓取反馈、竞品动态，生成需求洞察</td>
+                    </tr>
+                    <tr>
+                        <td>需求定义</td>
+                        <td>PM独立撰写PRD</td>
+                        <td>AI帮写PRD初稿</td>
+                        <td>Agent基于洞察直接生成PRD + 原型 + 测试用例</td>
+                    </tr>
+                    <tr>
+                        <td>进度管理</td>
+                        <td>每日站会 + 手动更新</td>
+                        <td>AI总结会议纪要</td>
+                        <td>Agent实时同步进度，异常自动预警</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 8px;">BCG 2026：在AI原生模式下，<span class="text-bold">一个PM的覆盖范围可以扩大4-6倍</span>。</p>
+
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.2 六大工种AI化重塑路径</h3>
 
             <table>
                 <thead>
@@ -2257,7 +2387,6 @@ button:focus-visible {
                         <th>当前普遍水平</th>
                         <th>阶段二目标</th>
                         <th>关键变化</th>
-                        <th>参考实践</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -2266,47 +2395,41 @@ button:focus-visible {
                         <td><span class="tag tag-red">L1</span> 代码补全</td>
                         <td><span class="tag tag-orange">L2</span> AI协同开发</td>
                         <td>从"AI补全代码"到"AI生成模块 + 人审核 + AI测试"</td>
-                        <td>Cursor + Agentic Coding</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">测试工程师</span></td>
                         <td><span class="tag tag-red">L1</span> AI辅助写用例</td>
                         <td><span class="tag tag-green">L3</span> Agent自动化测试</td>
-                        <td>从"AI帮写测试脚本"到"Agent自动生成 + 执行 + 回归 + 报告"</td>
-                        <td>AI Test Agent</td>
+                        <td>从"AI帮写测试脚本"到"Agent自动生成 + 执行 + 回归"</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">产品经理</span></td>
                         <td><span class="tag tag-red">L1</span> AI辅助写文档</td>
                         <td><span class="tag tag-orange">L2</span> AI协同产品设计</td>
                         <td>从"AI写PRD"到"AI洞察需求 + 生成方案 + 模拟验证"</td>
-                        <td>覆盖范围扩大4-6倍</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">设计师</span></td>
                         <td><span class="tag tag-red">L1</span> AI生图</td>
                         <td><span class="tag tag-orange">L2</span> AI协同设计</td>
-                        <td>从"AI出草图"到"AI生成多方案 + 人选定 + AI出终稿 + 切图"</td>
-                        <td>Figma AI + MidJourney</td>
+                        <td>从"AI出草图"到"AI生成多方案 + 人选定 + AI出终稿"</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">运营/市场</span></td>
                         <td><span class="tag tag-red">L1</span> AI写文案</td>
                         <td><span class="tag tag-orange">L2</span> AI个性化运营</td>
-                        <td>从"AI写通稿"到"Agent分人群生成个性化内容 + 自动分发 + 效果追踪"</td>
-                        <td>PwC: hyper-personalization</td>
+                        <td>从"AI写通稿"到"Agent分人群生成个性化内容"</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">财务/HR</span></td>
                         <td><span class="tag tag-red">L1</span> AI辅助分析</td>
                         <td><span class="tag tag-green">L3</span> Agent自动执行</td>
-                        <td>Agent处理发票、匹配订单、对账、异常检测；人聚焦战略决策</td>
-                        <td>PwC: AI agents for finance</td>
+                        <td>Agent处理发票、匹配订单、对账、异常检测</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 落地六步法</h3>
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.3 落地六步法（6-12个月）</h3>
 
             <table>
                 <thead>
@@ -2358,76 +2481,22 @@ button:focus-visible {
             </table>
 
             <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">Deloitte的关键提醒：别忘了度量标准的升级</div>
-                <p>Deloitte 2026报告指出，当工种AI化重塑后，传统的度量标准会失效。例如：<span class="text-bold">用"代码行数"衡量AI辅助开发是荒谬的</span>。新的度量标准应该聚焦<span class="text-bold">业务产出</span>而非工作量——比如从"一周写了多少行代码"变成"一周交付了几个可用Feature"。</p>
+                <div class="insight-title">Deloitte关键提醒：度量标准必须升级</div>
+                <p>当工种AI化重塑后，传统的度量标准会失效。例如：<span class="text-bold">用"代码行数"衡量AI辅助开发是荒谬的</span>。新的度量标准应该聚焦<span class="text-bold">业务产出</span>而非工作量——比如从"一周写了多少行代码"变成"一周交付了几个可用Feature"。</p>
             </div>
-        </div>
-    </div>
 
-    <!-- 能带来哪些变化 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">3</span>
-            <h2 class="section-title">能带来哪些变化</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段二完成后，你应该能观察到这些变化：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>变化前（阶段一完成）</th>
-                        <th>变化后（阶段二完成）</th>
-                        <th>衡量指标</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>工作模式</td>
-                        <td>AI是"加速器"</td>
-                        <td>AI是"协作者"</td>
-                        <td>关键工种Agent覆盖率 > 60%</td>
-                    </tr>
-                    <tr>
-                        <td>交付效率</td>
-                        <td>个人效率提升20-30%</td>
-                        <td>关键工种交付效率翻倍</td>
-                        <td>交付周期缩短 > 50%</td>
-                    </tr>
-                    <tr>
-                        <td>工作内容</td>
-                        <td>重复性工作占比高</td>
-                        <td>重复性工作大部分由Agent完成</td>
-                        <td>人工重复任务占比 < 30%</td>
-                    </tr>
-                    <tr>
-                        <td>度量体系</td>
-                        <td>基于"工作量"</td>
-                        <td>基于"业务产出"</td>
-                        <td>每个工种有AI时代的新KPI</td>
-                    </tr>
-                    <tr>
-                        <td>能力要求</td>
-                        <td>专业技能 + 基本AI使用</td>
-                        <td>专业技能 + Agent编排能力</td>
-                        <td>核心岗位AI进阶培训通过率 > 80%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="comparison-grid" style="margin-top: 24px;">
-                <div class="correct-path">
+            <div class="paths-container" style="margin-top: 20px;">
+                <div class="right-path">
                     <div class="path-title">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="9" fill="#059669"/>
-                            <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2"/>
+                            <circle cx="10" cy="10" r="9" stroke="#059669" stroke-width="2"/>
+                            <path d="M6 10L9 13L14 7" stroke="#059669" stroke-width="2"/>
                         </svg>
-                        阶段二做对的信号
+                        阶段二完成的标志
                     </div>
                     <ul class="path-list">
-                        <li>员工开始说"这件事没有Agent就太低效了"</li>
-                        <li>工种之间出现新的协作模式</li>
+                        <li>关键工种交付效率翻倍（周期缩短 ≥ 50%）</li>
+                        <li>员工说"这件事没有Agent就太低效了"</li>
                         <li>新入职员工觉得旧流程"不可思议"</li>
                         <li>度量标准从输入端转向输出端</li>
                     </ul>
@@ -2443,21 +2512,10 @@ button:focus-visible {
                     <ul class="path-list">
                         <li>"AI使用率很高"但交付效率没变（阶段一假象）</li>
                         <li>工作流没变，只是每个步骤"AI加速了一点"</li>
-                        <li>Agent建了很多但没有实际业务价值（demo陷阱）</li>
-                        <li>度量标准还在用传统指标衡量新模式</li>
+                        <li>Agent建了很多但没有实际业务价值</li>
+                        <li><span class="text-bold">阶段二成功="每个工种找到AI原生方式"</span></li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">阶段二的限度——诚实面对</div>
-                <p>阶段二完成后，你<span class="text-bold">不应该</span>期望看到：</p>
-                <ul style="margin-top: 8px; padding-left: 20px;">
-                    <li>团队规模显著缩减（那需要阶段三的结构重组）</li>
-                    <li>工种之间的壁垒消除（那需要阶段三的协作模式重塑）</li>
-                    <li>全新的业务模式出现（那需要阶段四的战略跃迁）</li>
-                </ul>
-                <p style="margin-top: 8px;"><span class="text-bold">阶段二的成功标准是"让每个工种找到自己的AI原生工作方式"——这是从局部优化到整体变革的关键跳板。</span></p>
             </div>
         </div>
     </div>
@@ -2532,76 +2590,113 @@ button:focus-visible {
         </div>
     </div>
 
-    <!-- 应该做什么 -->
+    <!-- 目标：这个阶段要达成什么 -->
     <div class="section-card">
         <div class="section-header">
             <span class="section-number">1</span>
-            <h2 class="section-title">应该做什么：打破旧结构，构建新协作</h2>
+            <h2 class="section-title">目标：让人+AI混编成为新常态</h2>
         </div>
         <div class="section-content">
             <p>这是智能手机革命中<span class="text-bold">生产率飞跃发生的阶段</span>。以前做一条视频需要摄像+剪辑+运营十个人，现在一个人拿着手机就能拍、剪、发——团队从10人变3人，协作方式彻底重构。同理，阶段三不再问"AI怎么帮助现有团队"，而是问<span class="text-bold">"如果有了AI，团队应该怎么组织"</span>。</p>
 
             <div class="insight-box" style="margin-bottom: 20px;">
                 <div class="insight-title">什么是Pod团队？</div>
-                <p><span class="text-bold">Pod（小组/吊舱）</span>是一种源自敏捷开发的小型自治团队模式。与传统按职能划分的部门不同，Pod是<span class="text-bold">按业务目标组建的跨职能小队</span>——通常3-5人，涵盖产品、工程、质量等角色，共同负责一个完整的业务单元。在AI时代，Pod模式进一步演化：<span class="text-bold">AI Agent作为"虚拟成员"加入Pod</span>，承担代码生成、测试、文档、数据分析等工作，使得极小的人类团队就能覆盖过去大团队的产出。Pod的核心优势是：没有跨部门等待、没有信息传递延迟、决策到执行的路径极短。</p>
+                <p><span class="text-bold">Pod（小组/吊舱）</span>是一种按业务目标组建的跨职能小队——通常3-5人，涵盖产品、工程、质量等角色，共同负责一个完整的业务单元。在AI时代，<span class="text-bold">AI Agent作为"虚拟成员"加入Pod</span>，承担代码生成、测试、文档、数据分析等工作，使得极小的人类团队就能覆盖过去大团队的产出。</p>
             </div>
 
             <div class="insight-box">
-                <div class="insight-title">阶段三的三件事</div>
+                <div class="insight-title">阶段三的三个核心目标</div>
                 <p><span class="text-bold">1. 团队结构扁平化</span>——从金字塔到Pod，消除因信息传递而存在的中间层<br/>
                 <span class="text-bold">2. 人机混编常态化</span>——Agent不是工具，而是"团队成员"<br/>
-                <span class="text-bold">3. 度量体系重建</span>——从过程指标到成果指标的全面切换</p>
+                <span class="text-bold">3. 端到端效率3-5倍提升</span>——不是单工种快，而是整体流程快</p>
             </div>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.1 团队结构扁平化：为什么中间层在消失</h3>
-            <p>BCG 2026年报告揭示了一个正在发生的结构性变化：<span class="text-bold">知识型劳动力正在从金字塔变成"沙漏型"</span>——初级员工和高级员工增多，中间层缩减。原因是：</p>
+            <p style="margin-top: 12px;">阶段三的成功标准是：<span class="text-bold">"一个3-5人的Pod + N个Agent，产出相当于传统15-20人团队"</span>——这说明真正的生产率飞跃发生了。</p>
+        </div>
+    </div>
 
-            <div class="quote-box">
-                <p class="quote-text">"Across functions, demand may grow for generalists who understand a wide range of tasks well enough to oversee agents and align their work with business goals."</p>
-                <p class="quote-author">—— PwC, 2026 AI Business Predictions</p>
-            </div>
+    <!-- 度量：如何衡量成功 -->
+    <div class="section-card">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">度量：如何知道阶段三成功了</h2>
+        </div>
+        <div class="section-content">
+            <p>阶段三的核心问题是<span class="text-bold">"团队协作模式有没有真正重构"</span>。不是看单工种效率，而是看端到端效率和组织形态变化。</p>
 
-            <table style="margin-top: 16px;">
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.1 结果指标（北极星）</h3>
+            <table>
                 <thead>
                     <tr>
-                        <th>传统角色</th>
-                        <th>存在的原因</th>
-                        <th>AI时代的变化</th>
-                        <th>趋势</th>
+                        <th>指标名称</th>
+                        <th>定义</th>
+                        <th>目标值</th>
+                        <th>计算方式</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>中层管理者</td>
-                        <td>信息汇总与传递</td>
-                        <td>AI实时汇总和分发信息，管理者角色从"传话"变为"决策"</td>
-                        <td>数量减少，质量提升</td>
+                        <td><span class="text-bold">端到端效率提升</span></td>
+                        <td>从需求提出到上线的完整周期缩短比例</td>
+                        <td><span class="tag tag-green">≥ 70%</span></td>
+                        <td>周期基线对比</td>
                     </tr>
                     <tr>
-                        <td>协调角色（PMO等）</td>
-                        <td>跨团队信息同步</td>
-                        <td>Agent自动同步进度和状态，人工协调需求锐减</td>
-                        <td>大幅减少</td>
+                        <td><span class="text-bold">人均业务产出</span></td>
+                        <td>团队业务交付量 / 人数（含Agent贡献折算）</td>
+                        <td><span class="tag tag-green">提升3-5倍</span></td>
+                        <td>业务产出统计</td>
                     </tr>
                     <tr>
-                        <td>执行层专业人员</td>
-                        <td>专业技能执行</td>
-                        <td>Agent承担重复性专业任务，人聚焦判断和创新</td>
-                        <td>从"专家"变为"通才 + Agent编排者"</td>
-                    </tr>
-                    <tr>
-                        <td>高级战略人员</td>
-                        <td>战略与创新决策</td>
-                        <td>Agent提供更多数据支撑，但战略判断不可替代</td>
-                        <td>需求增加</td>
+                        <td><span class="text-bold">Pod团队覆盖率</span></td>
+                        <td>采用Pod模式的核心业务占比</td>
+                        <td><span class="tag tag-green">≥ 50%</span></td>
+                        <td>组织形态统计</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.2 人机混编常态化：BCG的四种组织原型</h3>
-            <p>BCG 2026年提出了AI时代的<span class="text-bold">四种组织原型</span>，帮助企业根据自身情况选择合适的团队AI化重组路径：</p>
-
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 过程指标（组织健康度）</h3>
             <table>
+                <thead>
+                    <tr>
+                        <th>指标名称</th>
+                        <th>监控频率</th>
+                        <th>健康阈值</th>
+                        <th>异常信号</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>跨职能协作等待时间</td>
+                        <td>周</td>
+                        <td>&lt; 1天</td>
+                        <td>&gt; 3天说明壁垒仍在</td>
+                    </tr>
+                    <tr>
+                        <td>决策到执行响应时长</td>
+                        <td>周</td>
+                        <td>&lt; 2小时</td>
+                        <td>链条过长，需简化</td>
+                    </tr>
+                    <tr>
+                        <td>管理跨度（每个管理者带人数）</td>
+                        <td>月</td>
+                        <td>增加2-3倍</td>
+                        <td>不增加说明扁平化不够</td>
+                    </tr>
+                    <tr>
+                        <td>Agent输出采纳率</td>
+                        <td>周</td>
+                        <td>≥ 70%</td>
+                        <td>过低说明Agent质量不足</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.3 评估模型：组织原型 + 度量体系三级跃迁</h3>
+            <p>BCG 2026年提出了AI时代的<span class="text-bold">四种组织原型</span>，帮助评估企业当前的团队AI化程度：</p>
+            <table style="margin-top: 8px;">
                 <thead>
                     <tr>
                         <th>原型</th>
@@ -2612,93 +2707,79 @@ button:focus-visible {
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="tag tag-red">Scaler（扩展者）</span></td>
+                        <td><span class="tag tag-red">Scaler</span></td>
                         <td>用AI放大现有业务规模</td>
                         <td>保持团队规模，AI提升人均产出</td>
-                        <td>业务增长快但招人难的企业</td>
+                        <td>业务增长快但招人难</td>
                     </tr>
                     <tr>
-                        <td><span class="tag tag-orange">Streamliner（精简者）</span></td>
+                        <td><span class="tag tag-orange">Streamliner</span></td>
                         <td>用AI精简流程和团队</td>
                         <td>减少执行层，增加AI编排层</td>
                         <td>成熟业务需要降本增效</td>
                     </tr>
                     <tr>
-                        <td><span class="tag tag-blue">Horizon Builder（开拓者）</span></td>
+                        <td><span class="tag tag-blue">Horizon Builder</span></td>
                         <td>用AI探索全新业务方向</td>
                         <td>小团队+大量Agent，快速试错</td>
-                        <td>需要创新突破的企业</td>
+                        <td>需要创新突破</td>
                     </tr>
                     <tr>
-                        <td><span class="tag tag-green">Reinventor（重塑者）</span></td>
+                        <td><span class="tag tag-green">Reinventor</span></td>
                         <td>全面重新定义组织运营模式</td>
                         <td>人+AI混合团队，打破职能边界</td>
-                        <td>面临行业颠覆的企业</td>
+                        <td>面临行业颠覆</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p style="margin-top: 16px;">大多数企业会在<span class="text-bold">Scaler和Streamliner之间</span>选择，少数先锋企业开始探索Horizon Builder。真正的Reinventor目前全球屈指可数。</p>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.3 度量体系重建：从"忙不忙"到"值不值"</h3>
-            <p>阶段三最被低估但最关键的变革是<span class="text-bold">度量体系的重建</span>。当Agent处理了大量中间环节，传统的过程指标（代码行数、会议时长、文档数量）就完全失效了。</p>
-
             <div class="insight-box" style="margin-top: 16px;">
-                <div class="insight-title">度量体系的三级跃迁</div>
-                <table style="margin-top: 12px;">
-                    <thead>
-                        <tr>
-                            <th>层级</th>
-                            <th>度量什么</th>
-                            <th>典型指标</th>
-                            <th>适用阶段</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="text-bold">L1 活动指标</span></td>
-                            <td>"做了多少"</td>
-                            <td>代码行数、会议数、文档数</td>
-                            <td>阶段一（已淘汰）</td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-bold">L2 效率指标</span></td>
-                            <td>"快了多少"</td>
-                            <td>交付周期、代码审查时长、缺陷密度</td>
-                            <td>阶段二</td>
-                        </tr>
-                        <tr>
-                            <td><span class="text-bold">L3 成果指标</span></td>
-                            <td>"值多少"</td>
-                            <td>Feature交付到用户手中的速度、用户满意度、业务ROI</td>
-                            <td>阶段三（目标）</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="insight-title">度量体系三级跃迁（关键判断）</div>
+                <p><span class="text-bold">L1 活动指标</span>（"做了多少"）→ <span class="text-bold">L2 效率指标</span>（"快了多少"）→ <span class="text-bold">L3 成果指标</span>（"值多少"）</p>
+                <p style="margin-top: 8px;">阶段三必须完成从L2到L3的跃迁。PwC 2026："迭代次数增加不代表效率降低，关键是结果是否更快更好。"</p>
             </div>
-
-            <p style="margin-top: 16px;">PwC 2026报告中一句话精准概括：<span class="text-bold">"With agents, iterations move quickly, but if an outcome that once took five days and two iterations now takes fifteen iterations but only two days, you're ahead."</span>——迭代次数增加不代表效率降低，关键是结果是否更快更好。</p>
         </div>
     </div>
 
-    <!-- 具体怎么做 -->
+    <!-- 实施：具体怎么做 -->
     <div class="section-card">
         <div class="section-header">
-            <span class="section-number">2</span>
-            <h2 class="section-title">具体怎么做：团队AI化重组三步走</h2>
+            <span class="section-number">3</span>
+            <h2 class="section-title">实施：团队AI化重组三步走（12-24月）</h2>
         </div>
         <div class="section-content">
-            <h3 style="font-size: 16px; color: var(--color-text-primary);">Step 1：选择组织原型，确定团队形态（M1-M3）</h3>
-            <p>基于BCG的四种原型，评估企业当前业务阶段和战略目标，选定合适的团队形态：</p>
-            <ul style="padding-left: 20px; margin-top: 8px;">
-                <li><span class="text-bold">业务高增长期</span>：优先选Scaler，AI放大人均产出</li>
-                <li><span class="text-bold">业务成熟期</span>：优先选Streamliner，AI精简流程和人员</li>
-                <li><span class="text-bold">面临颠覆风险</span>：考虑Horizon Builder，用AI快速探索</li>
-            </ul>
+            <h3 style="font-size: 15px; color: var(--color-text-primary);">3.1 为什么中间层在消失</h3>
+            <p>BCG 2026年报告揭示了一个正在发生的结构性变化：<span class="text-bold">知识型劳动力正在从金字塔变成"沙漏型"</span>——初级员工和高级员工增多，中间层缩减。</p>
+            <table style="margin-top: 8px;">
+                <thead>
+                    <tr>
+                        <th>传统角色</th>
+                        <th>存在的原因</th>
+                        <th>AI时代的变化</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>中层管理者</td>
+                        <td>信息汇总与传递</td>
+                        <td>AI实时汇总，管理者从"传话"变为"决策"</td>
+                    </tr>
+                    <tr>
+                        <td>协调角色（PMO等）</td>
+                        <td>跨团队信息同步</td>
+                        <td>Agent自动同步，人工协调需求锐减</td>
+                    </tr>
+                    <tr>
+                        <td>执行层专业人员</td>
+                        <td>专业技能执行</td>
+                        <td>从"专家"变为"通才 + Agent编排者"</td>
+                    </tr>
+                </tbody>
+            </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">Step 2：试点重组——先建一个"未来团队"（M3-M9）</h3>
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.2 试点重组——先建一个"未来团队"（M3-M9）</h3>
 
-            <div class="case-card" style="margin-top: 16px;">
+            <div class="case-card" style="margin-top: 12px;">
                 <div class="case-header">
                     <div class="case-logo" style="background: linear-gradient(135deg, #2563EB, #7C3AED);">P</div>
                     <div>
@@ -2706,7 +2787,6 @@ button:focus-visible {
                         <div class="case-subtitle">人+AI混编小组的最小可行结构</div>
                     </div>
                 </div>
-                <p style="font-size: 14px; margin-top: 12px;">典型的Pod团队结构：</p>
 
                 <table style="margin-top: 12px;">
                     <thead>
@@ -2740,12 +2820,10 @@ button:focus-visible {
                     </tbody>
                 </table>
 
-                <p style="font-size: 14px; margin-top: 12px;">这个3-5人的Pod团队，配合AI Agent集群，理论产出相当于传统15-20人团队。关键差异不在人数，而在<span class="text-bold">工作方式</span>——Pod内没有等待、没有信息传递延迟、没有"等XX评审"。</p>
+                <p style="font-size: 14px; margin-top: 12px;">这个3-5人的Pod团队，配合AI Agent集群，理论产出相当于传统15-20人团队。关键差异：<span class="text-bold">Pod内没有等待、没有信息传递延迟、决策到执行路径极短</span>。</p>
             </div>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">Step 3：重建度量体系，建立"AI时代OKR"（M6-M12）</h3>
-            <p>在团队AI化重组的同时，必须同步重建度量体系。否则新团队形态会被旧度量体系"拉回去"。</p>
-
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.3 重建度量体系，建立"AI时代OKR"（M6-M12）</h3>
             <table>
                 <thead>
                     <tr>
@@ -2757,7 +2835,7 @@ button:focus-visible {
                 <tbody>
                     <tr>
                         <td>代码行数 / PR数</td>
-                        <td>Agent写大量代码，但可能质量参差</td>
+                        <td>Agent写大量代码，但质量参差</td>
                         <td>Feature完成度 × 用户满意度</td>
                     </tr>
                     <tr>
@@ -2771,11 +2849,6 @@ button:focus-visible {
                         <td>线上故障率 × 平均修复时长</td>
                     </tr>
                     <tr>
-                        <td>会议时长</td>
-                        <td>Pod团队几乎不需要正式会议</td>
-                        <td>决策到执行的响应时长</td>
-                    </tr>
-                    <tr>
                         <td>团队人数</td>
                         <td>不再能反映实际产能</td>
                         <td>人均业务产出（含Agent产出）</td>
@@ -2784,77 +2857,44 @@ button:focus-visible {
             </table>
 
             <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">麦肯锡的警告：别让"AI提效红利"蒸发</div>
+                <div class="insight-title">麦肯锡警告：别让"AI提效红利"蒸发</div>
                 <p>麦肯锡中国研究发现一个典型反模式：<span class="text-bold">AI确实让团队更快了，但省出来的时间被新增需求填满</span>，结果交付周期没变，只是做了更多"低价值的事"。度量体系必须从"做了多少"切换到"值多少"，才能真正锁定AI带来的效率红利。</p>
             </div>
-        </div>
-    </div>
 
-    <!-- 能带来哪些变化 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">3</span>
-            <h2 class="section-title">能带来哪些变化</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段三是<span class="text-bold">生产率真正飞跃的阶段</span>——就像一个人拿着手机就能完成过去一个团队的工作。完成后你应该看到：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>变化前（阶段二完成）</th>
-                        <th>变化后（阶段三完成）</th>
-                        <th>衡量指标</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>团队形态</td>
-                        <td>传统职能团队 + AI工具</td>
-                        <td>人+AI混编Pod团队</td>
-                        <td>Pod团队覆盖核心业务 > 50%</td>
-                    </tr>
-                    <tr>
-                        <td>整体效率</td>
-                        <td>单工种效率翻倍</td>
-                        <td>端到端交付效率3-5倍提升</td>
-                        <td>需求到上线周期缩短 > 70%</td>
-                    </tr>
-                    <tr>
-                        <td>协作模式</td>
-                        <td>跨工种协作仍有壁垒</td>
-                        <td>Pod内无壁垒，Agent打通信息流</td>
-                        <td>跨职能协作等待时间 < 1天</td>
-                    </tr>
-                    <tr>
-                        <td>人员结构</td>
-                        <td>金字塔型</td>
-                        <td>沙漏型（初级+高级为主）</td>
-                        <td>管理跨度增加2-3倍</td>
-                    </tr>
-                    <tr>
-                        <td>度量体系</td>
-                        <td>效率指标为主</td>
-                        <td>成果指标为主</td>
-                        <td>业务ROI可追踪的项目 > 80%</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">阶段三的限度——诚实面对</div>
-                <p>阶段三完成后，你<span class="text-bold">不应该</span>期望看到：</p>
-                <ul style="margin-top: 8px; padding-left: 20px;">
-                    <li>全新的业务模式诞生（那需要阶段四的战略重塑）</li>
-                    <li>行业格局被颠覆（那需要整个行业进入阶段四）</li>
-                    <li>AI完全替代人类（Agent仍需要人的监督、创新和战略判断）</li>
-                </ul>
-                <p style="margin-top: 8px;"><span class="text-bold">阶段三的成功标准是"让人+AI协作成为新常态"——这是从量变到质变的临界点。</span></p>
+            <div class="paths-container" style="margin-top: 20px;">
+                <div class="right-path">
+                    <div class="path-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#059669" stroke-width="2"/>
+                            <path d="M6 10L9 13L14 7" stroke="#059669" stroke-width="2"/>
+                        </svg>
+                        阶段三完成的标志
+                    </div>
+                    <ul class="path-list">
+                        <li>端到端效率3-5倍提升（周期缩短 ≥ 70%）</li>
+                        <li>Pod团队覆盖核心业务 > 50%</li>
+                        <li>管理跨度增加2-3倍</li>
+                        <li>度量体系完成L2→L3跃迁</li>
+                    </ul>
+                </div>
+                <div class="wrong-path">
+                    <div class="path-title">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="9" stroke="#E11D48" stroke-width="2"/>
+                            <path d="M6 6L14 14M14 6L6 14" stroke="#E11D48" stroke-width="2"/>
+                        </svg>
+                        阶段三的局限——诚实面对
+                    </div>
+                    <ul class="path-list">
+                        <li>不应期望全新业务模式诞生（需阶段四）</li>
+                        <li>不应期望AI完全替代人类</li>
+                        <li><span class="text-bold">阶段三成功="人+AI协作成新常态"</span></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"What today feels cutting-edge in AI workforce strategy will be table stakes by 2030. Organizations that begin experimenting now will have significant advantages."</p>
+                <p class="quote-text">"What today feels cutting-edge in AI workforce strategy will be table stakes by 2030."</p>
                 <p class="quote-author">—— BCG, AI Is Moving Faster Than Your Workforce Strategy, 2026</p>
             </div>
         </div>
@@ -2921,125 +2961,183 @@ button:focus-visible {
         </div>
     </div>
 
-    <!-- 应该做什么 -->
+    <!-- 目标：这个阶段要达成什么 -->
     <div class="section-card">
         <div class="section-header">
             <span class="section-number">1</span>
-            <h2 class="section-title">应该做什么：从"用AI做旧事"到"因AI做新事"</h2>
+            <h2 class="section-title">目标：因AI做全新的事</h2>
         </div>
         <div class="section-content">
-            <p>智能手机革命的最终阶段不是“手机用得更高效”——而是<span class="text-bold">智能手机催生了全新的产业</span>：短视频、外卖平台、移动支付。这些业态在功能机时代不可能存在。同理，AI的终极价值不是“用AI做原来的事做得更快”，而是“因为有了AI，做了全新的事”。</p>
+            <p>智能手机革命的最终阶段不是"手机用得更高效"——而是<span class="text-bold">智能手机催生了全新的产业</span>：短视频、外卖平台、移动支付。这些业态在功能机时代不可能存在。同理，AI的终极价值不是"用AI做原来的事做得更快"，而是"因为有了AI，做了全新的事"。</p>
 
             <div class="insight-box">
-                <div class="insight-title">阶段四的三件事</div>
+                <div class="insight-title">阶段四的三个核心目标</div>
                 <p><span class="text-bold">1. 战略重塑</span>——重新回答"做什么"的问题<br/>
-                <span class="text-bold">2. 商业模式创新</span>——把AI能力变成新的收入来源<br/>
+                <span class="text-bold">2. AI原生收入 > 20%</span>——把AI能力变成新的收入来源<br/>
                 <span class="text-bold">3. 生态构建</span>——从单体组织到AI增强的生态系统</p>
             </div>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.1 战略重塑：CEO必须亲自回答的三个问题</h3>
-            <p>PwC 2026报告的核心论点是：<span class="text-bold">AI转型必须是自上而下的战略行为，而非自下而上的众包运动。</span>阶段四尤其如此——因为它涉及的不是"怎么做"，而是"做什么"和"不做什么"。</p>
+            <p style="margin-top: 12px;">阶段四的成功标准是：<span class="text-bold">"你的业务有一部分是因为AI才可能存在的"</span>——这说明AI不只是工具，而是业务本身的一部分。</p>
+        </div>
+    </div>
 
+    <!-- 度量：如何衡量成功 -->
+    <div class="section-card">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2 class="section-title">度量：如何知道阶段四成功了</h2>
+        </div>
+        <div class="section-content">
+            <p>阶段四的核心问题是<span class="text-bold">"有没有真正创造出AI原生的业务价值"</span>。不是看AI用得多深，而是看业务有没有质变。</p>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.1 结果指标（北极星）</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>问题</th>
-                        <th>传统思维</th>
-                        <th>AI时代思维</th>
-                        <th>案例</th>
+                        <th>指标名称</th>
+                        <th>定义</th>
+                        <th>目标值</th>
+                        <th>计算方式</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><span class="text-bold">"什么是我们的核心竞争力？"</span></td>
-                        <td>人才密度、专业知识、规模效应</td>
-                        <td>数据资产、AI能力、生态网络</td>
-                        <td>Netflix: 从内容库存到推荐算法</td>
+                        <td><span class="text-bold">AI原生收入占比</span></td>
+                        <td>因AI才可能存在的业务收入 / 总收入</td>
+                        <td><span class="tag tag-green">&gt; 20%</span></td>
+                        <td>业务分类统计</td>
                     </tr>
                     <tr>
-                        <td><span class="text-bold">"什么业务应该AI化？"</span></td>
-                        <td>人力密集的业务可以用AI降本</td>
-                        <td>AI可以创造哪些过去不可能的新业务？</td>
-                        <td>Shopify: AI从工具变为产品核心能力</td>
+                        <td><span class="text-bold">新市场份额</span></td>
+                        <td>AI创造的新业务在新兴市场的份额</td>
+                        <td><span class="tag tag-green">领先地位</span></td>
+                        <td>市场调研</td>
                     </tr>
                     <tr>
-                        <td><span class="text-bold">"组织边界在哪里？"</span></td>
-                        <td>员工数决定产能上限</td>
-                        <td>Agent无限扩展，组织边界重新定义</td>
-                        <td>AI-native创业公司: 10人团队做到传统100人公司的业务</td>
+                        <td><span class="text-bold">生态合作伙伴数</span></td>
+                        <td>接入/使用企业AI能力的外部伙伴数量</td>
+                        <td><span class="tag tag-green">规模化增长</span></td>
+                        <td>合作统计</td>
                     </tr>
                 </tbody>
             </table>
 
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"Have leadership pick the spots. Top leadership picks a few areas for focused AI investments, often where business priorities, evidence of AI's value, and availability of talent and data align. Then, leadership focuses on execution."</p>
-                <p class="quote-author">—— PwC, 2026 AI Business Predictions</p>
-            </div>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.2 商业模式创新：三种AI驱动的收入模式</h3>
-
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 过程指标（战略健康度）</h3>
             <table>
+                <thead>
+                    <tr>
+                        <th>指标名称</th>
+                        <th>监控频率</th>
+                        <th>健康阈值</th>
+                        <th>意义</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AI Only功能占比</td>
+                        <td>季度</td>
+                        <td>产品路线图 ≥ 30%</td>
+                        <td>创新方向是否足够激进</td>
+                    </tr>
+                    <tr>
+                        <td>创新项目ROI回收周期</td>
+                        <td>半年</td>
+                        <td>≤ 18个月</td>
+                        <td>创新是否有商业价值</td>
+                    </tr>
+                    <tr>
+                        <td>AI治理成熟度评分</td>
+                        <td>季度</td>
+                        <td>≥ 4分（5分制）</td>
+                        <td>治理能否支撑业务扩展</td>
+                    </tr>
+                    <tr>
+                        <td>负责任AI指标（RAI）</td>
+                        <td>季度</td>
+                        <td>客户信任度 ≥ 80%</td>
+                        <td>PwC：60%认为RAI提升ROI</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.3 评估模型：商业模式创新 + 治理成熟度</h3>
+            <p>阶段四的三种<span class="text-bold">AI驱动商业模式</span>：</p>
+            <table style="margin-top: 8px;">
                 <thead>
                     <tr>
                         <th>模式</th>
                         <th>描述</th>
                         <th>典型案例</th>
-                        <th>实现前提</th>
+                        <th>前提条件</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><span class="tag tag-red">AI增强产品</span></td>
-                        <td>将AI能力嵌入现有产品，提升产品价值和溢价</td>
-                        <td>Adobe Firefly, Canva Magic Design, Notion AI</td>
-                        <td>阶段二完成，产品团队具备AI工作流</td>
+                        <td>将AI能力嵌入现有产品，提升溢价</td>
+                        <td>Adobe Firefly, Notion AI</td>
+                        <td>阶段二完成</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-orange">AI即服务</span></td>
-                        <td>将内部AI能力对外输出，形成新的收入流</td>
-                        <td>Amazon (AWS → Bedrock), Microsoft (Azure OpenAI)</td>
-                        <td>阶段三完成，AI平台化能力成熟</td>
+                        <td>将内部AI能力对外输出</td>
+                        <td>AWS Bedrock, Azure OpenAI</td>
+                        <td>阶段三完成</td>
                     </tr>
                     <tr>
                         <td><span class="tag tag-green">AI原生业务</span></td>
-                        <td>从零设计AI原生的业务模式，做传统方式不可能做的事</td>
-                        <td>AI-native药物研发、AI-native金融风控</td>
-                        <td>阶段三完成 + CEO级战略决心</td>
+                        <td>从零设计，做传统不可能的事</td>
+                        <td>AI药物研发、AI金融风控</td>
+                        <td>阶段三 + CEO级决心</td>
                     </tr>
                 </tbody>
             </table>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">1.3 AI治理与可持续发展</h3>
-            <p>PwC和Deloitte 2026报告都强调，<span class="text-bold">阶段四不可能绕过治理问题</span>。当AI深度嵌入业务和产品，治理不再是"合规要求"，而是<span class="text-bold">竞争优势的来源</span>。</p>
-
-            <div class="stats-grid" style="margin: 16px 0;">
-                <div class="stat-card">
-                    <div class="stat-value success">60%</div>
-                    <div class="stat-label">认为负责任AI提升了ROI<br/><small>PwC 2025 RAI调查</small></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value info">55%</div>
-                    <div class="stat-label">报告改善了客户体验<br/><small>PwC 2025 RAI调查</small></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-value warning">~50%</div>
-                    <div class="stat-label">承认RAI落地困难<br/><small>PwC 2025 RAI调查</small></div>
-                </div>
+            <div class="insight-box" style="margin-top: 16px;">
+                <div class="insight-title">PwC治理三层防护（关键评估）</div>
+                <p><span class="text-bold">L1 自动化防护</span>（实时监控）→ <span class="text-bold">L2 人工审核</span>（高风险介入）→ <span class="text-bold">L3 独立评估</span>（第三方审计）</p>
+                <p style="margin-top: 8px;">治理成熟度直接影响AI业务的可扩展性。忽视治理的企业往往在规模化时遭遇重大挫折。</p>
             </div>
-
-            <p>同时，AI可持续性问题在阶段四变得紧迫。PwC建议采用<span class="text-bold">"碳调度"（Carbon Scheduling）</span>和按需使用token的策略，在AI价值和环境影响之间取得平衡。</p>
         </div>
     </div>
 
-    <!-- 具体怎么做 -->
+    <!-- 实施：具体怎么做 -->
     <div class="section-card">
         <div class="section-header">
-            <span class="section-number">2</span>
-            <h2 class="section-title">具体怎么做：业务AI化跃迁路线图</h2>
+            <span class="section-number">3</span>
+            <h2 class="section-title">实施：业务AI化跃迁路线图（24-48月）</h2>
         </div>
         <div class="section-content">
-            <p>阶段四没有"标准模板"——因为每个企业的跃迁路径取决于其行业特性和战略选择。但有一套<span class="text-bold">通用的推进框架</span>：</p>
+            <h3 style="font-size: 15px; color: var(--color-text-primary);">3.1 CEO必须亲自回答的三个问题</h3>
+            <p>PwC 2026：<span class="text-bold">AI转型必须是自上而下的战略行为，而非自下而上的众包运动。</span></p>
+            <table style="margin-top: 8px;">
+                <thead>
+                    <tr>
+                        <th>问题</th>
+                        <th>传统思维</th>
+                        <th>AI时代思维</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"什么是我们的核心竞争力？"</td>
+                        <td>人才密度、专业知识、规模效应</td>
+                        <td>数据资产、AI能力、生态网络</td>
+                    </tr>
+                    <tr>
+                        <td>"什么业务应该AI化？"</td>
+                        <td>人力密集的业务可以用AI降本</td>
+                        <td>AI可以创造哪些过去不可能的新业务？</td>
+                    </tr>
+                    <tr>
+                        <td>"组织边界在哪里？"</td>
+                        <td>员工数决定产能上限</td>
+                        <td>Agent无限扩展，组织边界重新定义</td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <h3 style="margin-top: 20px; font-size: 15px; color: var(--color-text-primary);">3.2 四阶段推进框架</h3>
             <table>
                 <thead>
                     <tr>
@@ -3053,132 +3151,47 @@ button:focus-visible {
                     <tr>
                         <td><span class="text-bold">战略研判</span></td>
                         <td>M1-M3</td>
-                        <td>CEO牵头，评估AI对行业格局的颠覆性影响，识别"AI只做"的新机会</td>
+                        <td>CEO牵头，评估AI对行业格局的颠覆性影响</td>
                         <td>AI战略白皮书 + 机会清单</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">创新孵化</span></td>
                         <td>M3-M9</td>
-                        <td>选1-2个"AI原生业务"方向，组建Horizon Builder团队快速试错</td>
+                        <td>选1-2个"AI原生业务"方向，快速试错</td>
                         <td>MVP + 市场验证数据</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">规模化验证</span></td>
                         <td>M9-M18</td>
-                        <td>成功方向投入规模化资源，建立AI治理和安全框架</td>
-                        <td>可规模化的新业务 + 完整的治理体系</td>
+                        <td>成功方向投入规模化资源，建立AI治理框架</td>
+                        <td>可规模化新业务 + 完整治理体系</td>
                     </tr>
                     <tr>
                         <td><span class="text-bold">生态构建</span></td>
                         <td>M18-M36</td>
-                        <td>将AI能力生态化，构建合作伙伴网络，形成飞轮效应</td>
-                        <td>AI生态系统 + 持续增长的新收入流</td>
+                        <td>将AI能力生态化，构建合作伙伴网络</td>
+                        <td>AI生态系统 + 持续增长新收入</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="insight-box" style="margin-top: 20px;">
                 <div class="insight-title">PwC的"AI Studio"模式</div>
-                <p>PwC 2026报告建议通过<span class="text-bold">"AI Studio"</span>来统筹阶段四的创新：一个集中式的创新枢纽，汇集可复用的技术组件、用例评估框架、测试沙盒、部署协议和专业人才。它把业务目标和AI能力连接起来，<span class="text-bold">让你快速发现高ROI的创新机会</span>。</p>
-                <p style="margin-top: 8px;">这不是传统的"创新实验室"——区别在于它<span class="text-bold">直接连接业务目标和P&L</span>，每个孵化项目都必须有明确的商业价值预期。</p>
+                <p>PwC建议通过<span class="text-bold">"AI Studio"</span>统筹阶段四创新：一个集中式创新枢纽，汇集可复用的技术组件、用例评估框架、测试沙盒、部署协议和专业人才。它把业务目标和AI能力连接起来，<span class="text-bold">让你快速发现高ROI的创新机会</span>。</p>
             </div>
 
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">治理框架：PwC的"三层防护"</h3>
-            <p>当AI深入业务核心，治理框架需要从"检查清单"升级为"运行时系统"：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>层级</th>
-                        <th>职责</th>
-                        <th>典型机制</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="tag tag-red">L1 自动化防护</span></td>
-                        <td>实时监控Agent行为</td>
-                        <td>自动化红队测试、输出审计、异常检测</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-orange">L2 人工审核</span></td>
-                        <td>高风险场景的人工介入</td>
-                        <td>风险分级 + 升级协议 + 定期审计</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-green">L3 独立评估</span></td>
-                        <td>第三方独立评估</td>
-                        <td>外部审计、合规认证、性能评估</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"Unless you have unlimited data science resources, independent assessments may be needed to fill gaps. For higher-risk and higher-value systems, an independent opinion can be critical for performance and risk management."</p>
-                <p class="quote-author">—— PwC, 2026 AI Business Predictions</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 能带来哪些变化 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">3</span>
-            <h2 class="section-title">能带来哪些变化</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段四是<span class="text-bold">最不确定但最具颠覆性</span>的阶段。完成后你应该看到：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>变化前（阶段三完成）</th>
-                        <th>变化后（阶段四完成）</th>
-                        <th>衡量指标</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>业务模式</td>
-                        <td>用AI优化现有业务</td>
-                        <td>AI驱动的全新业务出现</td>
-                        <td>AI原生业务收入占比 > 20%</td>
-                    </tr>
-                    <tr>
-                        <td>竞争优势</td>
-                        <td>效率领先</td>
-                        <td>模式领先——做到竞争对手做不到的事</td>
-                        <td>市场估值溢价 / 新市场份额</td>
-                    </tr>
-                    <tr>
-                        <td>组织形态</td>
-                        <td>人+AI混编团队</td>
-                        <td>AI增强的生态系统</td>
-                        <td>生态合作伙伴数量和质量</td>
-                    </tr>
-                    <tr>
-                        <td>战略定位</td>
-                        <td>"用AI做得更好的XX公司"</td>
-                        <td>"因为AI而存在的新物种"</td>
-                        <td>行业定位和品牌认知转变</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="comparison-grid" style="margin-top: 24px;">
-                <div class="correct-path">
+            <div class="paths-container" style="margin-top: 20px;">
+                <div class="right-path">
                     <div class="path-title">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="9" fill="#059669"/>
-                            <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2"/>
+                            <circle cx="10" cy="10" r="9" stroke="#059669" stroke-width="2"/>
+                            <path d="M6 10L9 13L14 7" stroke="#059669" stroke-width="2"/>
                         </svg>
                         阶段四的早期信号
                     </div>
                     <ul class="path-list">
-                        <li>CEO开始问"AI让我们可以做什么全新的事"</li>
+                        <li>AI原生业务收入占比 > 20%</li>
                         <li>产品路线图中出现"AI Only"的Feature</li>
-                        <li>新业务线只需要传统十分之一的人力</li>
                         <li>外部合作伙伴主动寻求接入你的AI能力</li>
                         <li>竞争对手开始模仿你的AI原生做法</li>
                     </ul>
@@ -3193,17 +3206,15 @@ button:focus-visible {
                     </div>
                     <ul class="path-list">
                         <li>跳过前三个阶段直接尝试"业务创新"——根基不牢</li>
-                        <li>把"用AI降本"包装成"业务AI化跃迁"——自欺欺人</li>
+                        <li>把"用AI降本"包装成"业务跃迁"——自欺欺人</li>
                         <li>忽视治理和安全——一次重大AI事故可能毁掉所有进展</li>
-                        <li>忽视AI可持续性——能源成本和环境影响可能侵蚀利润</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="insight-box" style="margin-top: 20px;">
-                <div class="insight-title">2028年展望</div>
-                <p>目前全球真正进入阶段四的企业<span class="text-bold">不到5%</span>。但BCG预测：<span class="text-bold">"今天感觉先进的做法，到2030年将成为基本要求。"</span>这意味着，现在开始布局阶段四的先锋企业，将在2028-2030年形成难以逾越的竞争壁垒。</p>
-                <p style="margin-top: 8px;">智能手机从只用来打电话到催生抖音、美团，大约用了7-8年。AI时代的节奏可能更快——<span class="text-bold">窗口期可能只有3-5年</span>。现在已经是2026年了。</p>
+            <div class="insight-box" style="margin-top: 16px;">
+                <div class="insight-title">2028年展望：窗口期3-5年</div>
+                <p>目前全球真正进入阶段四的企业<span class="text-bold">不到5%</span>。但BCG预测："今天感觉先进的做法，到2030年将成为基本要求。"智能手机从打电话到催生抖音、美团，大约用了7-8年。AI时代的节奏可能更快——<span class="text-bold">窗口期可能只有3-5年</span>。现在已经是2026年了。</p>
             </div>
         </div>
     </div>
@@ -3215,730 +3226,10 @@ button:focus-visible {
             <span class="chapter-nav-name">阶段三：团队AI化重组</span>
             <span class="chapter-nav-reason">回顾阶段3的人+AI协作方式</span>
         </div>
-        <div class="chapter-nav-item next" data-tab="tab6" role="button" tabindex="0">
-            <span class="chapter-nav-label">下一章 &#8594;</span>
-            <span class="chapter-nav-name">度量指标体系</span>
-            <span class="chapter-nav-reason">每个阶段应该用什么指标来衡量效果</span>
-        </div>
-    </div>
-</div>
-<!-- 第七章：度量指标体系——如何衡量每个阶段的成功 -->
-<div id="tab6" class="tab-panel">
-    <div class="section-overview">
-        <span class="section-overview-label">一张图看清本章</span>
-        <div class="section-overview-content">
-            <svg viewBox="0 0 700 200" style="max-width: 700px;">
-                <!-- 标题 -->
-                <text x="350" y="18" text-anchor="middle" font-size="11" font-weight="700" fill="#1C1917">四阶段度量指标体系：从工具使用到业务价值</text>
-                
-                <!-- 四个阶段的指标卡片 -->
-                <!-- 阶段1 -->
-                <rect x="5" y="32" width="165" height="135" rx="8" fill="white" stroke="#3B82F6" stroke-width="1.5"/>
-                <rect x="5" y="32" width="165" height="24" rx="8" fill="#EFF6FF"/>
-                <circle cx="20" cy="44" r="8" fill="#3B82F6"/>
-                <text x="20" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="white">1</text>
-                <text x="35" y="47" font-size="9" font-weight="600" fill="#3B82F6">工具普及</text>
-                <text x="15" y="70" font-size="8" font-weight="600" fill="#1C1917">结果指标</text>
-                <text x="15" y="82" font-size="7.5" fill="#57534E">• 工具渗透率 ≥80%</text>
-                <text x="15" y="93" font-size="7.5" fill="#57534E">• 安全合规达标率</text>
-                <text x="15" y="107" font-size="8" font-weight="600" fill="#1C1917">过程指标</text>
-                <text x="15" y="119" font-size="7.5" fill="#57534E">• 周活跃使用人数</text>
-                <text x="15" y="130" font-size="7.5" fill="#57534E">• 培训完成率</text>
-                <text x="15" y="144" font-size="8" font-weight="600" fill="#1C1917">评估模型</text>
-                <text x="15" y="156" font-size="7.5" fill="#57534E">采纳漏斗模型</text>
-                
-                <!-- 阶段2 -->
-                <rect x="180" y="32" width="165" height="135" rx="8" fill="white" stroke="#10B981" stroke-width="1.5"/>
-                <rect x="180" y="32" width="165" height="24" rx="8" fill="#ECFDF5"/>
-                <circle cx="195" cy="44" r="8" fill="#10B981"/>
-                <text x="195" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="white">2</text>
-                <text x="210" y="47" font-size="9" font-weight="600" fill="#10B981">工种AI化</text>
-                <text x="190" y="70" font-size="8" font-weight="600" fill="#1C1917">结果指标</text>
-                <text x="190" y="82" font-size="7.5" fill="#57534E">• 工种效率提升30%+</text>
-                <text x="190" y="93" font-size="7.5" fill="#57534E">• AI工作流SOP覆盖率</text>
-                <text x="190" y="107" font-size="8" font-weight="600" fill="#1C1917">过程指标</text>
-                <text x="190" y="119" font-size="7.5" fill="#57534E">• AI代码采纳率</text>
-                <text x="190" y="130" font-size="7.5" fill="#57534E">• 单任务时间缩短</text>
-                <text x="190" y="144" font-size="8" font-weight="600" fill="#1C1917">评估模型</text>
-                <text x="190" y="156" font-size="7.5" fill="#57534E">工种效能矩阵</text>
-                
-                <!-- 阶段3 -->
-                <rect x="355" y="32" width="165" height="135" rx="8" fill="white" stroke="#F59E0B" stroke-width="1.5"/>
-                <rect x="355" y="32" width="165" height="24" rx="8" fill="#FFFBEB"/>
-                <circle cx="370" cy="44" r="8" fill="#F59E0B"/>
-                <text x="370" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="white">3</text>
-                <text x="385" y="47" font-size="9" font-weight="600" fill="#D97706">团队重组</text>
-                <text x="365" y="70" font-size="8" font-weight="600" fill="#1C1917">结果指标</text>
-                <text x="365" y="82" font-size="7.5" fill="#57534E">• 交付周期缩短50%+</text>
-                <text x="365" y="93" font-size="7.5" fill="#57534E">• L2+需求占比</text>
-                <text x="365" y="107" font-size="8" font-weight="600" fill="#1C1917">过程指标</text>
-                <text x="365" y="119" font-size="7.5" fill="#57534E">• 跨工种协作频次</text>
-                <text x="365" y="130" font-size="7.5" fill="#57534E">• 端到端需求周期</text>
-                <text x="365" y="144" font-size="8" font-weight="600" fill="#1C1917">评估模型</text>
-                <text x="365" y="156" font-size="7.5" fill="#57534E">DORA+组织效能</text>
-                
-                <!-- 阶段4 -->
-                <rect x="530" y="32" width="165" height="135" rx="8" fill="white" stroke="#8B5CF6" stroke-width="1.5"/>
-                <rect x="530" y="32" width="165" height="24" rx="8" fill="#F5F3FF"/>
-                <circle cx="545" cy="44" r="8" fill="#8B5CF6"/>
-                <text x="545" y="47" text-anchor="middle" font-size="8" font-weight="700" fill="white">4</text>
-                <text x="560" y="47" font-size="9" font-weight="600" fill="#8B5CF6">业务跃迁</text>
-                <text x="540" y="70" font-size="8" font-weight="600" fill="#1C1917">结果指标</text>
-                <text x="540" y="82" font-size="7.5" fill="#57534E">• AI原生收入占比20%+</text>
-                <text x="540" y="93" font-size="7.5" fill="#57534E">• 人效比3-5x提升</text>
-                <text x="540" y="107" font-size="8" font-weight="600" fill="#1C1917">过程指标</text>
-                <text x="540" y="119" font-size="7.5" fill="#57534E">• 新业务孵化数量</text>
-                <text x="540" y="130" font-size="7.5" fill="#57534E">• AI治理成熟度</text>
-                <text x="540" y="144" font-size="8" font-weight="600" fill="#1C1917">评估模型</text>
-                <text x="540" y="156" font-size="7.5" fill="#57534E">业务价值归因模型</text>
-                
-                <!-- 底部说明 -->
-                <rect x="100" y="175" width="500" height="20" rx="6" fill="#F8FAFB" stroke="#E7E5E4"/>
-                <text x="350" y="188" text-anchor="middle" font-size="8" fill="#78716C">核心原则：指标随阶段升级——从"用没用"到"用得好"到"整体快"到"业务强"</text>
-            </svg>
-        </div>
-    </div>
-
-    <!-- 为什么需要度量体系 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">1</span>
-            <h2 class="section-title">为什么需要分阶段的度量体系</h2>
-        </div>
-        <div class="section-content">
-            <p>很多企业用<span class="text-bold">"AI代码生成率"</span>作为北极星指标，结果发现：代码生成率30%+了，但交付周期一点没变——这是典型的<span class="text-bold">度量失配</span>问题。</p>
-            
-            <div class="insight-box">
-                <div class="insight-title">度量体系的三层结构</div>
-                <p><span class="text-bold">结果指标</span>（Outcome）——对企业的价值衡量，回答"AI转型对业务有什么用"<br/>
-                <span class="text-bold">过程指标</span>（Process）——执行过程的健康度，回答"我们做对了吗"<br/>
-                <span class="text-bold">评估模型</span>（Model）——系统化的诊断框架，回答"我们在哪个水平"</p>
-            </div>
-
-            <p style="margin-top: 12px;">核心原则：<span class="text-bold">指标必须与当前阶段匹配</span>。阶段一用阶段三的指标，会让团队无所适从；阶段三还用阶段一的指标，会掩盖真正的问题。</p>
-
-            <table style="margin-top: 16px;">
-                <thead>
-                    <tr>
-                        <th>常见误区</th>
-                        <th>问题</th>
-                        <th>正确做法</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>阶段一就看交付周期</td>
-                        <td>工具还没普及，交付周期不会变</td>
-                        <td>先看渗透率和使用习惯</td>
-                    </tr>
-                    <tr>
-                        <td>阶段二只看代码生成率</td>
-                        <td>个人效率提升不等于工种效率提升</td>
-                        <td>看工种级SOP覆盖和单工种效率</td>
-                    </tr>
-                    <tr>
-                        <td>阶段三还看个人指标</td>
-                        <td>个人快了但整体可能没变</td>
-                        <td>看端到端交付周期和团队产出</td>
-                    </tr>
-                    <tr>
-                        <td>阶段四只看效率指标</td>
-                        <td>忽略了业务模式创新的价值</td>
-                        <td>看AI原生业务收入和市场影响</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- 阶段一度量体系 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">2</span>
-            <h2 class="section-title">阶段一度量体系：工具普及</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段一的核心问题是：<span class="text-bold">"工具有没有被用起来"</span>。此时谈效率提升为时尚早。</p>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.1 结果指标（对企业的价值）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>目标值</th>
-                        <th>数据来源</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="text-bold">工具渗透率</span></td>
-                        <td>使用AI工具的员工数 / 总员工数</td>
-                        <td>≥ 80%</td>
-                        <td>工具后台统计</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">安全合规达标率</span></td>
-                        <td>符合AI使用规范的使用行为占比</td>
-                        <td>100%</td>
-                        <td>安全审计日志</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">统一入口覆盖</span></td>
-                        <td>通过统一AI入口使用工具的占比</td>
-                        <td>≥ 90%</td>
-                        <td>入口系统统计</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.2 过程指标（执行健康度）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>监控频率</th>
-                        <th>预警阈值</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>周活跃用户数（WAU）</td>
-                        <td>每周至少使用1次AI工具的用户数</td>
-                        <td>周</td>
-                        <td>连续2周下降 &gt; 10%</td>
-                    </tr>
-                    <tr>
-                        <td>培训完成率</td>
-                        <td>完成AI工具培训的员工占比</td>
-                        <td>月</td>
-                        <td>&lt; 90% 需追踪</td>
-                    </tr>
-                    <tr>
-                        <td>工具满意度NPS</td>
-                        <td>净推荐值（愿意推荐 - 不愿意推荐）</td>
-                        <td>季度</td>
-                        <td>NPS &lt; 30 需优化</td>
-                    </tr>
-                    <tr>
-                        <td>问题工单量</td>
-                        <td>AI工具相关的支持工单数</td>
-                        <td>周</td>
-                        <td>周增长 &gt; 20% 需关注</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">2.3 评估模型：采纳漏斗</h3>
-            <div class="insight-box">
-                <div class="insight-title">采纳漏斗模型（Adoption Funnel）</div>
-                <p>用漏斗模型诊断工具普及的卡点：</p>
-                <p style="margin-top: 8px;">
-                <span class="text-bold">知晓</span>（知道有这个工具）→ <span class="text-bold">获取</span>（能够获得使用权限）→ <span class="text-bold">尝试</span>（第一次使用）→ <span class="text-bold">活跃</span>（持续使用）→ <span class="text-bold">推荐</span>（推荐给同事）</p>
-                <p style="margin-top: 8px;">每个环节的转化率都要监控。如果"知晓→获取"转化低，说明权限流程有问题；如果"尝试→活跃"转化低，说明工具体验或培训有问题。</p>
-            </div>
-
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"Our AI Transformation Index reveals that companies with 80%+ tool penetration are 3x more likely to achieve measurable productivity gains in the next phase."</p>
-                <p class="quote-author">—— Deloitte, AI Transformation Index 2026</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 阶段二度量体系 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">3</span>
-            <h2 class="section-title">阶段二度量体系：工种AI化</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段二的核心问题是：<span class="text-bold">"各工种有没有建立AI原生工作流"</span>。不是看个人用得多不多，而是看工种级别的系统性变化。</p>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">3.1 结果指标（对企业的价值）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>目标值</th>
-                        <th>计算方式</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="text-bold">工种效率提升</span></td>
-                        <td>单工种完成相同任务的时间缩短比例</td>
-                        <td>≥ 30%</td>
-                        <td>任务时间基线对比</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">AI工作流SOP覆盖率</span></td>
-                        <td>已建立AI工作流SOP的工种数 / 总工种数</td>
-                        <td>≥ 80%</td>
-                        <td>SOP文档统计</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">人均产出变化</span></td>
-                        <td>单工种人均产出的同比变化</td>
-                        <td>≥ 20%↑</td>
-                        <td>工种产出统计</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">3.2 过程指标（分工种细化）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>工种</th>
-                        <th>核心过程指标</th>
-                        <th>目标值</th>
-                        <th>说明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="tag tag-blue">研发</span></td>
-                        <td>AI代码采纳率、编码周期缩短</td>
-                        <td>采纳率 ≥ 25%，周期 -30%</td>
-                        <td>注意：采纳率高但周期不变说明有问题</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-green">测试</span></td>
-                        <td>AI用例生成率、自动化覆盖率</td>
-                        <td>生成率 ≥ 50%，覆盖 ≥ 70%</td>
-                        <td>关注用例质量，不只是数量</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-orange">产品</span></td>
-                        <td>AI辅助PRD比例、需求澄清轮次</td>
-                        <td>辅助 ≥ 60%，轮次 -40%</td>
-                        <td>PRD质量需要额外评估</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-purple">设计</span></td>
-                        <td>AI设计稿采用率、设计周期缩短</td>
-                        <td>采用 ≥ 40%，周期 -35%</td>
-                        <td>创意质量需人工评估</td>
-                    </tr>
-                    <tr>
-                        <td><span class="tag tag-red">运营</span></td>
-                        <td>AI内容生成率、个性化覆盖率</td>
-                        <td>生成 ≥ 50%，个性化 ≥ 30%</td>
-                        <td>关注内容效果（点击/转化）</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">3.3 评估模型：工种效能矩阵</h3>
-            <div class="insight-box">
-                <div class="insight-title">工种效能矩阵（Role Efficiency Matrix）</div>
-                <p>用2×2矩阵诊断各工种的AI化水平：</p>
-                <p style="margin-top: 8px;">
-                <span class="text-bold">横轴</span>：AI工具使用深度（浅用 vs 深度集成）<br/>
-                <span class="text-bold">纵轴</span>：效率提升幅度（低 vs 高）</p>
-                <p style="margin-top: 8px;">
-                • <span class="text-bold">右上象限（深度+高效）</span>：标杆工种，可复制推广<br/>
-                • <span class="text-bold">左上象限（浅用+高效）</span>：天花板近，需深化<br/>
-                • <span class="text-bold">右下象限（深度+低效）</span>：方向错误，需重新审视<br/>
-                • <span class="text-bold">左下象限（浅用+低效）</span>：需要更多赋能和培训</p>
-            </div>
-        </div>
-    </div>
-    <!-- 阶段三度量体系 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">4</span>
-            <h2 class="section-title">阶段三度量体系：团队重组</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段三的核心问题是：<span class="text-bold">"团队整体效能有没有提升"</span>。这是最关键的换挡点——从"个人快了"到"整体快了"。</p>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">4.1 结果指标（对企业的价值）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>目标值</th>
-                        <th>为什么重要</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="text-bold">端到端交付周期</span></td>
-                        <td>需求从提出到上线的总时间</td>
-                        <td>缩短 ≥ 50%</td>
-                        <td>衡量整体流程效率，不是局部</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">L2+需求占比</span></td>
-                        <td>中大型需求占全部需求的比例</td>
-                        <td>提升 ≥ 30%</td>
-                        <td>说明团队能承接更复杂的需求</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">团队人均交付量</span></td>
-                        <td>团队总产出 / 团队人数</td>
-                        <td>提升 ≥ 50%</td>
-                        <td>衡量团队级人效，非个人</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">质量保持率</span></td>
-                        <td>效率提升后线上问题率不增加</td>
-                        <td>≤ 基线</td>
-                        <td>确保不是牺牲质量换效率</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">4.2 过程指标（协作健康度）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>监控频率</th>
-                        <th>健康阈值</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>跨工种协作频次</td>
-                        <td>不同工种间的协作触点数</td>
-                        <td>月</td>
-                        <td>随效率提升应下降（AI填充中间环节）</td>
-                    </tr>
-                    <tr>
-                        <td>需求流转等待时间</td>
-                        <td>需求在工种间流转的等待时间</td>
-                        <td>周</td>
-                        <td>应持续下降</td>
-                    </tr>
-                    <tr>
-                        <td>并行协作比例</td>
-                        <td>并行开展的工作占比（vs串行）</td>
-                        <td>月</td>
-                        <td>应持续上升</td>
-                    </tr>
-                    <tr>
-                        <td>团队满意度</td>
-                        <td>团队对新协作方式的满意度</td>
-                        <td>季度</td>
-                        <td>≥ 7/10</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">4.3 评估模型：DORA + 组织效能四维模型</h3>
-            <div class="insight-box">
-                <div class="insight-title">DORA扩展模型</div>
-                <p>在DORA四指标基础上，增加组织效能维度：</p>
-                <p style="margin-top: 8px;">
-                <span class="text-bold">DORA原有指标</span>：<br/>
-                • 部署频率（Deployment Frequency）<br/>
-                • 变更前置时间（Lead Time for Changes）<br/>
-                • 变更失败率（Change Failure Rate）<br/>
-                • 恢复时间（Time to Restore）</p>
-                <p style="margin-top: 8px;">
-                <span class="text-bold">组织效能扩展</span>：<br/>
-                • 需求响应速度（从提出到启动）<br/>
-                • 价值交付效率（从启动到上线）<br/>
-                • 协作摩擦指数（返工、等待、重复沟通）<br/>
-                • 能力密度（单人能承担的职责范围）</p>
-            </div>
-
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"The top performers in AI-augmented teams show 60% faster lead time and 40% fewer cross-functional handoffs, while maintaining or improving quality metrics."</p>
-                <p class="quote-author">—— DORA State of DevOps Report 2025</p>
-            </div>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">4.4 快手实践：度量换挡</h3>
-            <p>快手研发效能团队在2025-2026年经历了典型的度量换挡过程：</p>
-            <table style="margin-top: 8px;">
-                <thead>
-                    <tr>
-                        <th>时期</th>
-                        <th>北极星指标</th>
-                        <th>发现的问题</th>
-                        <th>换挡原因</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2024 Q4</td>
-                        <td>AI代码生成率</td>
-                        <td>—</td>
-                        <td>推广期，需要牵引使用</td>
-                    </tr>
-                    <tr>
-                        <td>2025 Q1</td>
-                        <td>AI代码采纳率</td>
-                        <td>生成率高但采纳低</td>
-                        <td>关注"用没用"</td>
-                    </tr>
-                    <tr>
-                        <td>2025 Q2</td>
-                        <td>编码周期缩短</td>
-                        <td>采纳高但周期没变</td>
-                        <td>关注"有没有用"</td>
-                    </tr>
-                    <tr>
-                        <td>2025 Q3-Q4</td>
-                        <td>L2+需求占比</td>
-                        <td>个人快了但整体没变</td>
-                        <td>关注"整体快没快"</td>
-                    </tr>
-                    <tr>
-                        <td>2026</td>
-                        <td>端到端交付周期</td>
-                        <td>L2+占比提升但交付周期没变</td>
-                        <td>关注全链路价值</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <!-- 阶段四度量体系 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">5</span>
-            <h2 class="section-title">阶段四度量体系：业务跃迁</h2>
-        </div>
-        <div class="section-content">
-            <p>阶段四的核心问题是：<span class="text-bold">"AI有没有驱动全新的业务价值"</span>。这时候效率指标已经不够了，需要看业务级别的变化。</p>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">5.1 结果指标（对企业的价值）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>目标值</th>
-                        <th>衡量维度</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="text-bold">AI原生业务收入占比</span></td>
-                        <td>由AI驱动的新业务收入 / 总收入</td>
-                        <td>≥ 20%</td>
-                        <td>商业模式创新</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">人效比提升</span></td>
-                        <td>相同业务规模所需人力的变化</td>
-                        <td>3-5x</td>
-                        <td>组织效率极限</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">市场竞争力指标</span></td>
-                        <td>市场份额、估值溢价、客户增长</td>
-                        <td>领先竞品</td>
-                        <td>战略优势</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">AI ROI</span></td>
-                        <td>AI投入产出比（含机会成本）</td>
-                        <td>≥ 300%</td>
-                        <td>投资回报</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">5.2 过程指标（创新健康度）</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>指标名称</th>
-                        <th>定义</th>
-                        <th>监控频率</th>
-                        <th>健康阈值</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>新业务孵化数量</td>
-                        <td>AI驱动的新业务/产品数</td>
-                        <td>季度</td>
-                        <td>≥ 2个在孵化</td>
-                    </tr>
-                    <tr>
-                        <td>AI治理成熟度</td>
-                        <td>治理框架的完善程度评分</td>
-                        <td>半年</td>
-                        <td>≥ 4/5级</td>
-                    </tr>
-                    <tr>
-                        <td>AI人才密度</td>
-                        <td>AI相关能力的人才占比</td>
-                        <td>季度</td>
-                        <td>持续提升</td>
-                    </tr>
-                    <tr>
-                        <td>AI可持续性指标</td>
-                        <td>AI运营成本、能源消耗趋势</td>
-                        <td>月</td>
-                        <td>单位成本下降</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">5.3 评估模型：业务价值归因模型</h3>
-            <div class="insight-box">
-                <div class="insight-title">AI业务价值归因模型（AI Value Attribution）</div>
-                <p>阶段四需要能够清晰归因AI带来的业务价值：</p>
-                <p style="margin-top: 8px;">
-                <span class="text-bold">第一层：效率价值</span>——成本节约、时间缩短（可直接计算）<br/>
-                <span class="text-bold">第二层：增强价值</span>——现有业务因AI增强的增量收入<br/>
-                <span class="text-bold">第三层：创新价值</span>——AI原生新业务的全部收入<br/>
-                <span class="text-bold">第四层：战略价值</span>——市场地位、品牌溢价、竞争壁垒</p>
-                <p style="margin-top: 8px;">多数企业只算第一层，忽略了后三层。<span class="text-bold">真正的AI领先者在第三、四层建立优势。</span></p>
-            </div>
-
-            <div class="quote-box" style="margin-top: 16px;">
-                <p class="quote-text">"ROI modeling for AI must evolve beyond simple efficiency gains. Leading enterprises attribute 60% of their AI value to revenue enhancement and new business models, not cost reduction."</p>
-                <p class="quote-author">—— PwC, 2026 AI Business Predictions</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- 度量体系实施建议 -->
-    <div class="section-card">
-        <div class="section-header">
-            <span class="section-number">6</span>
-            <h2 class="section-title">度量体系实施建议</h2>
-        </div>
-        <div class="section-content">
-            <h3 style="font-size: 15px; color: var(--color-text-primary);">6.1 度量治理原则</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>原则</th>
-                        <th>说明</th>
-                        <th>反面案例</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span class="text-bold">阶段匹配</span></td>
-                        <td>指标必须与当前阶段匹配</td>
-                        <td>阶段一就追交付周期</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">结果导向</span></td>
-                        <td>过程指标服务于结果指标</td>
-                        <td>只看使用量不看效果</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">质量守护</span></td>
-                        <td>效率提升不能牺牲质量</td>
-                        <td>交付快了但线上问题多了</td>
-                    </tr>
-                    <tr>
-                        <td><span class="text-bold">动态调整</span></td>
-                        <td>指标体系随阶段演进而调整</td>
-                        <td>用同一套指标度量所有阶段</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">6.2 数据采集架构</h3>
-            <div class="insight-box">
-                <div class="insight-title">度量数据的三层架构</div>
-                <p><span class="text-bold">L1 工具层</span>：AI工具的使用数据（自动采集）<br/>
-                • 来源：Cursor/Copilot后台、统一AI入口日志<br/>
-                • 指标：使用量、采纳率、生成率</p>
-                <p style="margin-top: 8px;"><span class="text-bold">L2 流程层</span>：研发流程的效率数据（系统对接）<br/>
-                • 来源：项目管理系统、CI/CD平台、代码仓库<br/>
-                • 指标：周期、吞吐量、质量</p>
-                <p style="margin-top: 8px;"><span class="text-bold">L3 业务层</span>：业务价值数据（业务系统+人工）<br/>
-                • 来源：财务系统、业务系统、管理报表<br/>
-                • 指标：收入、成本、ROI</p>
-            </div>
-
-            <h3 style="margin-top: 16px; font-size: 15px; color: var(--color-text-primary);">6.3 阶段诊断检查表</h3>
-            <p>用这张检查表判断你当前在哪个阶段，应该关注什么指标：</p>
-            <table style="margin-top: 8px;">
-                <thead>
-                    <tr>
-                        <th>诊断问题</th>
-                        <th>如果答案是"否"</th>
-                        <th>应关注的指标</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>80%+员工每周使用AI工具？</td>
-                        <td>仍在阶段一</td>
-                        <td>渗透率、WAU、培训完成率</td>
-                    </tr>
-                    <tr>
-                        <td>主要工种有AI工作流SOP？</td>
-                        <td>卡在阶段一→二</td>
-                        <td>SOP覆盖率、工种效率提升</td>
-                    </tr>
-                    <tr>
-                        <td>端到端交付周期明显缩短？</td>
-                        <td>卡在阶段二→三</td>
-                        <td>交付周期、L2+需求占比</td>
-                    </tr>
-                    <tr>
-                        <td>有AI驱动的新业务/收入？</td>
-                        <td>卡在阶段三→四</td>
-                        <td>AI原生业务收入、人效比</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="paths-container" style="margin-top: 20px;">
-                <div class="right-path">
-                    <div class="path-title">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="9" stroke="#059669" stroke-width="2"/>
-                            <path d="M6 10L9 13L14 7" stroke="#059669" stroke-width="2"/>
-                        </svg>
-                        度量体系的成功标志
-                    </div>
-                    <ul class="path-list">
-                        <li>指标体系能清晰回答"我们在哪个阶段"</li>
-                        <li>指标变化能解释业务变化（因果清晰）</li>
-                        <li>团队对指标有共识，不会被指标"玩坏"</li>
-                        <li>指标能驱动正确的行为，而非应付</li>
-                    </ul>
-                </div>
-                <div class="wrong-path">
-                    <div class="path-title">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <circle cx="10" cy="10" r="9" stroke="#E11D48" stroke-width="2"/>
-                            <path d="M6 6L14 14M14 6L6 14" stroke="#E11D48" stroke-width="2"/>
-                        </svg>
-                        度量体系的常见陷阱
-                    </div>
-                    <ul class="path-list">
-                        <li>指标太多，失去重点（建议每阶段3-5个核心指标）</li>
-                        <li>只看过程指标，忽略结果指标</li>
-                        <li>指标设定后不随阶段调整</li>
-                        <li>用指标"卷"团队而非"帮"团队</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 章节衔接导航 -->
-    <div class="chapter-nav">
-        <div class="chapter-nav-item prev" data-tab="tab5" role="button" tabindex="0">
-            <span class="chapter-nav-label">&#8592; 上一章</span>
-            <span class="chapter-nav-name">阶段四：业务AI化跃迁</span>
-            <span class="chapter-nav-reason">回顾阶段4的业务级变革</span>
-        </div>
         <div class="chapter-nav-item next" data-tab="tab1" role="button" tabindex="0">
             <span class="chapter-nav-label">回到起点 &#8634;</span>
             <span class="chapter-nav-name">问题和原因</span>
-            <span class="chapter-nav-reason">带着度量视角，重新审视AI转型的本质问题</span>
+            <span class="chapter-nav-reason">带着四阶段视角，重新审视"买了Cursor全员推"的本质问题</span>
         </div>
     </div>
 </div>
