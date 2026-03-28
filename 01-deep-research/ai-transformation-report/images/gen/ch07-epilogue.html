@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 40%, #fce7f3 100%);
+  border-radius: 16px;
+}
+.top-label {
+  display: inline-block;
+  background: #7c3aed;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+.title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #4c1d95;
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-size: 12.5px;
+  color: #6d28d9;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* 对比区 */
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: 0;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.compare-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.compare-card.old { border-top: 3px solid #94a3b8; }
+.compare-card.new-way { border-top: 3px solid #7c3aed; }
+.compare-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.compare-card.old .compare-label { color: #64748b; }
+.compare-card.new-way .compare-label { color: #7c3aed; }
+.compare-metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.metric-label { font-size: 11px; color: #64748b; flex: 0 0 72px; }
+.metric-bar-wrap { flex: 1; background: #f1f5f9; border-radius: 20px; height: 14px; overflow: hidden; }
+.metric-bar { height: 100%; border-radius: 20px; display: flex; align-items: center; }
+.metric-bar.b1 { background: #94a3b8; }
+.metric-bar.b2 { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
+.metric-val { font-size: 11px; font-weight: 700; flex: 0 0 48px; text-align: right; }
+.metric-val.old-val { color: #94a3b8; }
+.metric-val.new-val { color: #7c3aed; }
+
+.vs-circle {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 14px; font-weight: 800;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(124,58,237,0.4);
+}
+
+/* 生产流程 */
+.process-section { margin-bottom: 16px; }
+.section-title { font-size: 12px; font-weight: 700; color: #6d28d9; margin-bottom: 10px; }
+.process-flow {
+  display: flex;
+  gap: 0;
+  align-items: center;
+}
+.proc-step {
+  flex: 1;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  border-top: 3px solid #7c3aed;
+}
+.proc-step-num { font-size: 10px; color: #a78bfa; margin-bottom: 4px; font-weight: 700; }
+.proc-step-name { font-size: 11px; font-weight: 700; color: #4c1d95; margin-bottom: 3px; }
+.proc-step-who {
+  font-size: 9.5px;
+  color: white;
+  background: #7c3aed;
+  border-radius: 8px;
+  padding: 1px 6px;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+.proc-step-who.human { background: #3b82f6; }
+.proc-step-desc { font-size: 10px; color: #6b7280; line-height: 1.5; }
+.proc-arrow { font-size: 16px; color: #a78bfa; flex: 0 0 16px; text-align: center; }
+
+/* 洞察 */
+.insight {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 20px;
+  border-left: 4px solid #7c3aed;
+}
+.insight-text { font-size: 12.5px; color: #44403c; line-height: 1.8; }
+.insight-text b { color: #4c1d95; }
+.insight-text .highlight { background: linear-gradient(90deg, #f3e8ff, #fce7f3); padding: 0 4px; border-radius: 4px; }
+
+.source { margin-top: 12px; font-size: 10px; color: #a8a29e; text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="top-label">第七章 · 彩蛋</div>
+    <div class="title">这份报告本身就是一次"阶段二"实验</div>
+    <div class="subtitle">传统研究报告：1人×2周 = 1篇报告。这次：<b>1人+AI×2天 = 更系统的报告</b></div>
+
+    <!-- 对比 -->
+    <div class="compare-row">
+      <div class="compare-card old">
+        <div class="compare-label">⏱ 传统模式：1人 × 2周</div>
+        <div class="compare-metric">
+          <div class="metric-label">资料采集</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b1" style="width:80%"></div></div>
+          <div class="metric-val old-val">5天</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">框架搭建</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b1" style="width:40%"></div></div>
+          <div class="metric-val old-val">2.5天</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">内容撰写</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b1" style="width:60%"></div></div>
+          <div class="metric-val old-val">4天</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">迭代发布</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b1" style="width:40%"></div></div>
+          <div class="metric-val old-val">2.5天</div>
+        </div>
+      </div>
+
+      <div class="vs-circle">VS</div>
+
+      <div class="compare-card new-way">
+        <div class="compare-label">⚡ AI协作模式：1人+AI × 2天</div>
+        <div class="compare-metric">
+          <div class="metric-label">资料采集</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b2" style="width:20%"></div></div>
+          <div class="metric-val new-val">3小时</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">框架搭建</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b2" style="width:15%"></div></div>
+          <div class="metric-val new-val">2小时</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">内容撰写</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b2" style="width:25%"></div></div>
+          <div class="metric-val new-val">4小时</div>
+        </div>
+        <div class="compare-metric">
+          <div class="metric-label">迭代发布</div>
+          <div class="metric-bar-wrap"><div class="metric-bar b2" style="width:20%"></div></div>
+          <div class="metric-val new-val">3小时</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 生产流程 -->
+    <div class="process-section">
+      <div class="section-title">▌ 全程 AI 协作生产流程</div>
+      <div class="process-flow">
+        <div class="proc-step">
+          <div class="proc-step-num">Step 1</div>
+          <div class="proc-step-name">信息采集</div>
+          <div class="proc-step-who">AI Agent</div>
+          <div class="proc-step-desc">自动抓取McKinsey BCG PwC等最新报告核心数据</div>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <div class="proc-step-num">Step 2</div>
+          <div class="proc-step-name">框架设计</div>
+          <div class="proc-step-who human">人主导</div>
+          <div class="proc-step-desc">核心洞察"变革单元扩展"由人提出，AI辅助验证</div>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <div class="proc-step-num">Step 3</div>
+          <div class="proc-step-name">内容生成</div>
+          <div class="proc-step-who">AI Agent</div>
+          <div class="proc-step-desc">按框架生成7章节完整报告，人负责质量把关</div>
+        </div>
+        <div class="proc-arrow">→</div>
+        <div class="proc-step">
+          <div class="proc-step-num">Step 4</div>
+          <div class="proc-step-name">网页发布</div>
+          <div class="proc-step-who">AI Agent</div>
+          <div class="proc-step-desc">自动生成Web版、KIM Doc，自动部署GitHub Pages</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 洞察 -->
+    <div class="insight">
+      <div class="insight-text">
+        人花时间的地方变了：从<b>"怎么写"</b>变成<b>"应该讲什么"</b>。这正是阶段二工作流重设计的本质——<span class="highlight">不是AI放在哪里，而是整个生产方式重新设计</span>。这篇报告本身就是它所描述的内容的最佳注脚。
+      </div>
+    </div>
+
+    <div class="source">一次真实的阶段二实验 · 1人+AI × 2天</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 40%, #f0fdf4 100%);
+  border-radius: 16px;
+}
+.top-label {
+  display: inline-block;
+  background: #0369a1;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+.title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #0c4a6e;
+  margin-bottom: 6px;
+}
+.subtitle {
+  font-size: 12.5px;
+  color: #075985;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* 诊断卡片区 */
+.diag-section { margin-bottom: 16px; }
+.diag-title { font-size: 12px; font-weight: 700; color: #0369a1; margin-bottom: 8px; }
+.diag-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+.diag-card {
+  background: white;
+  border-radius: 8px;
+  padding: 10px 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  border-top: 3px solid;
+  text-align: center;
+}
+.diag-card.s1 { border-color: #E11D48; }
+.diag-card.s2 { border-color: #D97706; }
+.diag-card.s3 { border-color: #2563EB; }
+.diag-card.s4 { border-color: #059669; }
+.diag-card.s12 { border-color: #F59E0B; }
+.diag-signal { font-size: 10px; color: #44403c; line-height: 1.5; margin-bottom: 6px; }
+.diag-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  color: white;
+}
+.diag-card.s1 .diag-badge { background: #E11D48; }
+.diag-card.s2 .diag-badge { background: #D97706; }
+.diag-card.s3 .diag-badge { background: #2563EB; }
+.diag-card.s4 .diag-badge { background: #059669; }
+.diag-card.s12 .diag-badge { background: #F59E0B; }
+
+/* 行动区 */
+.action-section { margin-bottom: 14px; }
+.action-title { font-size: 12px; font-weight: 700; color: #0369a1; margin-bottom: 8px; }
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.action-card {
+  background: white;
+  border-radius: 8px;
+  padding: 12px 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+.action-stage {
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.action-card:nth-child(1) .action-stage { color: #E11D48; }
+.action-card:nth-child(2) .action-stage { color: #D97706; }
+.action-card:nth-child(3) .action-stage { color: #2563EB; }
+.action-card:nth-child(4) .action-stage { color: #059669; }
+.action-item { font-size: 10px; color: #44403c; line-height: 1.6; }
+.action-item::before { content: "→ "; color: #94a3b8; }
+
+/* 风险区 */
+.risk-section { }
+.risk-title { font-size: 12px; font-weight: 700; color: #dc2626; margin-bottom: 8px; }
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+.risk-card {
+  background: #fff5f5;
+  border-radius: 8px;
+  padding: 9px 8px;
+  border-left: 3px solid #E11D48;
+}
+.risk-text { font-size: 10px; color: #44403c; line-height: 1.5; }
+.risk-tag { font-size: 9px; color: #E11D48; font-weight: 700; margin-bottom: 3px; }
+
+.source { margin-top: 12px; font-size: 10px; color: #a8a29e; text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="top-label">第六章 · 行动指南</div>
+    <div class="title">你现在在哪？下一步怎么做？</div>
+    <div class="subtitle">三步自检：诊断阶段 → 匹配行动 → 规避陷阱。先找准自己的位置，再确定下一个杠杆点。</div>
+
+    <!-- 诊断 -->
+    <div class="diag-section">
+      <div class="diag-title">▌ 第一步：对号入座——你在哪个阶段？</div>
+      <div class="diag-grid">
+        <div class="diag-card s1">
+          <div class="diag-signal">AI工具使用率高，但不知道产生了什么价值</div>
+          <span class="diag-badge">阶段一</span>
+        </div>
+        <div class="diag-card s12">
+          <div class="diag-signal">某些工种效率提升了，但团队整体交付没变</div>
+          <span class="diag-badge">一→二跃迁中</span>
+        </div>
+        <div class="diag-card s2">
+          <div class="diag-signal">关键工种建立了AI原生工作流，效率翻倍</div>
+          <span class="diag-badge">阶段二</span>
+        </div>
+        <div class="diag-card s3">
+          <div class="diag-signal">Pod团队已在运转，人均产出大幅提升</div>
+          <span class="diag-badge">阶段三</span>
+        </div>
+        <div class="diag-card s4">
+          <div class="diag-signal">有业务收入来自AI才可能实现的新模式</div>
+          <span class="diag-badge">阶段四</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 行动 -->
+    <div class="action-section">
+      <div class="action-title">▌ 第二步：匹配你的下一步行动</div>
+      <div class="action-grid">
+        <div class="action-card">
+          <div class="action-stage">📍 在阶段一</div>
+          <div class="action-item">检查采纳漏斗，找最大漏点</div>
+          <div class="action-item">选3-5个高ROI场景，聚焦做透</div>
+          <div class="action-item">把"使用率"升级为"业务产出"度量</div>
+        </div>
+        <div class="action-card">
+          <div class="action-stage">🔀 一→二跃迁中</div>
+          <div class="action-item">选1-2优先工种，做完整工作流审计</div>
+          <div class="action-item">问"从零设计怎么做"不是"AI放哪里"</div>
+          <div class="action-item">建立工种效能矩阵，识别标杆复制</div>
+        </div>
+        <div class="action-card">
+          <div class="action-stage">🔀 二→三跃迁中</div>
+          <div class="action-item">选一个试点业务，组建首个Pod团队</div>
+          <div class="action-item">重建度量体系："做了多少→值多少"</div>
+          <div class="action-item">警惕"AI提效红利被新需求填满"陷阱</div>
+        </div>
+        <div class="action-card">
+          <div class="action-stage">🚀 三→四跃迁中</div>
+          <div class="action-item">CEO亲自回答三个战略问题</div>
+          <div class="action-item">建立AI治理框架（三层防护）</div>
+          <div class="action-item">选一个"AI原生业务"，快速MVP验证</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 风险 -->
+    <div class="risk-section">
+      <div class="risk-title">⚠️ 第三步：规避五大高危陷阱</div>
+      <div class="risk-grid">
+        <div class="risk-card">
+          <div class="risk-tag">陷阱①</div>
+          <div class="risk-text">跳过阶段一直接做流程重设计——基础不牢</div>
+        </div>
+        <div class="risk-card">
+          <div class="risk-tag">陷阱②</div>
+          <div class="risk-text">"AI使用率高"≠"工种AI化重塑完成"——阶段一假象</div>
+        </div>
+        <div class="risk-card">
+          <div class="risk-tag">陷阱③</div>
+          <div class="risk-text">AI提效红利被新需求填满——度量体系未升级</div>
+        </div>
+        <div class="risk-card">
+          <div class="risk-tag">陷阱④</div>
+          <div class="risk-text">忽视AI治理和安全——一次事故毁掉所有进展</div>
+        </div>
+        <div class="risk-card">
+          <div class="risk-tag">陷阱⑤</div>
+          <div class="risk-text">把"用AI降本"包装成"业务AI化跃迁"——自欺欺人</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="source">McKinsey 2025 · PwC 2026 · BCG 2026</div>
+  </div>
+</div>
+</body>
+</html>
