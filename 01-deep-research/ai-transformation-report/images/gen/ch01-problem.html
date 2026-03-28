@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 36px 44px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 30%, #fef9e7 100%);
+  border-radius: 16px;
+}
+.top-label {
+  display: inline-block;
+  background: #d97706;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+.title {
+  font-size: 19px;
+  font-weight: 800;
+  color: #78350f;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.subtitle {
+  font-size: 13px;
+  color: #92400e;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.card-title { font-size: 12px; font-weight: 700; color: #d97706; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #fde68a; }
+.row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: #d97706; margin-top: 5px; flex-shrink: 0; }
+.row-text { font-size: 12px; color: #44403c; line-height: 1.5; }
+.row-text b { color: #78350f; }
+.insight {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 18px;
+  border-left: 3px solid #d97706;
+  margin-top: 0;
+}
+.insight-title { font-size: 12px; font-weight: 700; color: #d97706; margin-bottom: 6px; }
+.insight-text { font-size: 12px; color: #44403c; line-height: 1.7; }
+.insight-text b { color: #78350f; }
+.source { margin-top: 14px; font-size: 10.5px; color: #a8a29e; text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="top-label">第一章 · 问题根源</div>
+    <div class="title">为什么"买了 Cursor / Manus / OpenClaw 等AI工具全员推"不管用？</div>
+    <div class="subtitle">工具 ≠ 工作流 ≠ 协作模式 ≠ 商业模式。每一级跃迁都是独立的组织挑战。</div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-title">四个"不等于"——最常见的误区</div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>AI工具购买</b> ≠ 员工会用起来</div></div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>个人用起来</b> ≠ 工作流效率提升</div></div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>工种效率提升</b> ≠ 组织端到端提效</div></div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>组织提效</b> ≠ 业务模式AI化跃迁</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title">BCG 10-20-70 法则</div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>10%</b> — AI模型本身（GPT-4、Claude等）</div></div>
+        <div class="row"><div class="dot"></div><div class="row-text"><b>20%</b> — 技术集成（IDE插件、API对接、部署）</div></div>
+        <div class="row"><div class="dot" style="background:#e11d48"></div><div class="row-text"><b style="color:#e11d48">70%</b> — <b>组织变革</b>：流程改造、技能培训、绩效调整</div></div>
+        <div class="row"><div class="dot"></div><div class="row-text">80%的企业把精力花在了只占10%影响的技术选型</div></div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-title">本质洞察：变革单元的逐级扩展</div>
+      <div class="insight-text">工具（个人）→ 工作流（角色）→ 协作模式（团队）→ 商业模式（组织）。技术能力是线性增长的，<b>但组织惯性是指数级的</b>。跳过任何一个阶段，上一级的所有投入都会"打水漂"。</div>
+    </div>
+
+    <div class="source">数据来源：BCG 10-20-70 法则 · McKinsey 2025 · PwC 2026</div>
+  </div>
+</div>
+</body>
+</html>

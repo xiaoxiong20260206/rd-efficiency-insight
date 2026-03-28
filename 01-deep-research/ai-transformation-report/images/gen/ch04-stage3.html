@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 30%, #faf5ff 100%);
+  border-radius: 16px;
+}
+.label { display: inline-block; background: #7c3aed; color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 14px; }
+.title { font-size: 18px; font-weight: 800; color: #3b0764; margin-bottom: 8px; }
+.subtitle { font-size: 13px; color: #5b21b6; margin-bottom: 20px; line-height: 1.6; }
+.old-new { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 0; align-items: center; margin-bottom: 16px; }
+.box {
+  background: white;
+  border-radius: 10px;
+  padding: 16px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.box-title { font-size: 12px; font-weight: 700; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ede9fe; }
+.row { font-size: 12px; color: #44403c; padding: 4px 0; line-height: 1.5; }
+.row b { color: #3b0764; }
+.old .box-title { color: #ef4444; border-bottom-color: #fee2e2; }
+.new .box-title { color: #7c3aed; border-bottom-color: #ede9fe; }
+.arrow-mid { text-align: center; font-size: 24px; color: #7c3aed; font-weight: 300; }
+
+.pod-card { background: white; border-radius: 10px; padding: 14px 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+.pod-title { font-size: 12px; font-weight: 700; color: #7c3aed; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ede9fe; }
+.pod-members { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.member {
+  text-align: center;
+  padding: 10px 6px;
+  border-radius: 8px;
+}
+.m-icon { width: 32px; height: 32px; border-radius: 50%; margin: 0 auto 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: white; }
+.m-role { font-size: 11px; font-weight: 600; color: #3b0764; margin-bottom: 2px; }
+.m-count { font-size: 10px; color: #78716c; }
+.m-resp { font-size: 10px; color: #6d28d9; margin-top: 2px; }
+.result { background: #f5f3ff; border-radius: 8px; padding: 10px 14px; margin-top: 12px; font-size: 12px; color: #3b0764; font-weight: 600; text-align: center; }
+.source { margin-top: 12px; font-size: 10.5px; color: #a8a29e; text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="label">阶段三 · 团队AI化重组</div>
+    <div class="title">让人+AI混编成为新常态</div>
+    <div class="subtitle">变革单元：团队/协作 &nbsp;·&nbsp; 周期：12-24个月 &nbsp;·&nbsp; 从金字塔到 Pod：3-5人 + N个Agent ≈ 传统15-20人</div>
+
+    <div class="old-new">
+      <div class="box old">
+        <div class="box-title">旧结构：金字塔（大多数企业现状）</div>
+        <div class="row">• <b>顶层：</b>高管决策，信息获取滞后</div>
+        <div class="row">• <b>中层：</b>中层管理+PMO，信息汇总传递</div>
+        <div class="row">• <b>底层：</b>执行层专业人员，等待和交接多</div>
+        <div class="row">• <b>痛点：</b>10-20人做一件事，决策链条长</div>
+      </div>
+      <div class="arrow-mid">→</div>
+      <div class="box new">
+        <div class="box-title">新结构：人+AI混编 Pod 团队</div>
+        <div class="row">• <b>Pod Lead：</b>产品+技术通才，直接决策</div>
+        <div class="row">• <b>Builder：</b>全栈工程师，编排与监督Agent</div>
+        <div class="row">• <b>Agent集群：</b>代码生成、测试、文档、分析</div>
+        <div class="row">• <b>优势：</b>无等待，决策到执行路径极短</div>
+      </div>
+    </div>
+
+    <div class="pod-card">
+      <div class="pod-title">Pod 团队最小可行结构（人+AI混编）</div>
+      <div class="pod-members">
+        <div class="member" style="background:#eff6ff">
+          <div class="m-icon" style="background:#2563eb">L</div>
+          <div class="m-role">Pod Lead</div>
+          <div class="m-count">× 1人</div>
+          <div class="m-resp">决策 + 质量把关</div>
+        </div>
+        <div class="member" style="background:#ecfdf5">
+          <div class="m-icon" style="background:#10b981">B</div>
+          <div class="m-role">Builder</div>
+          <div class="m-count">× 2-3人</div>
+          <div class="m-resp">架构 + Agent编排</div>
+        </div>
+        <div class="member" style="background:#fffbeb">
+          <div class="m-icon" style="background:#f59e0b">AI</div>
+          <div class="m-role">AI Agent集群</div>
+          <div class="m-count">× N个</div>
+          <div class="m-resp">代码/测试/文档</div>
+        </div>
+        <div class="member" style="background:#f5f3ff">
+          <div class="m-icon" style="background:#7c3aed">G</div>
+          <div class="m-role">Quality Guardian</div>
+          <div class="m-count">× 1人</div>
+          <div class="m-resp">审核 + 安全合规</div>
+        </div>
+      </div>
+      <div class="result">📊 端到端效率提升目标 ≥ 70%｜人均业务产出提升 3-5倍｜度量升级：L2效率指标 → L3成果指标</div>
+    </div>
+
+    <div class="source">数据来源：BCG AI Is Moving Faster Than Your Workforce Strategy 2026 · McKinsey China 2025</div>
+  </div>
+</div>
+</body>
+</html>

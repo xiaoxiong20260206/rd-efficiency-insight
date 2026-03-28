@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 36px 44px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e8f4fe 50%, #f0f4ff 100%);
+  border-radius: 16px;
+}
+.badge {
+  display: inline-block;
+  background: #2563EB;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+.title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1e3a5f;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+.stages {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.stage {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.stage-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 800;
+  color: white;
+  margin: 0 auto 10px;
+}
+.stage-name { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+.stage-unit { font-size: 11px; color: #94a3b8; margin-bottom: 6px; }
+.stage-kpi {
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.s1 .stage-num { background: #3b82f6; }
+.s1 .stage-name { color: #2563eb; }
+.s1 .stage-kpi { background: #eff6ff; color: #2563eb; }
+.s2 .stage-num { background: #f59e0b; }
+.s2 .stage-name { color: #d97706; }
+.s2 .stage-kpi { background: #fffbeb; color: #d97706; }
+.s3 .stage-num { background: #8b5cf6; }
+.s3 .stage-name { color: #7c3aed; }
+.s3 .stage-kpi { background: #f5f3ff; color: #7c3aed; }
+.s4 .stage-num { background: #10b981; }
+.s4 .stage-name { color: #059669; }
+.s4 .stage-kpi { background: #ecfdf5; color: #059669; }
+
+.arrow {
+  width: 24px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; color: #94a3b8; font-weight: 300;
+  flex-shrink: 0;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.stat-card {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.stat-label { font-size: 11px; color: #64748b; margin-bottom: 6px; }
+.stat-value { font-size: 18px; font-weight: 800; color: #1e3a5f; margin-bottom: 4px; }
+.stat-desc { font-size: 11px; color: #94a3b8; line-height: 1.4; }
+.source {
+  margin-top: 20px;
+  font-size: 11px;
+  color: #94a3b8;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="badge">全文概览</div>
+    <div class="title">AI组织转型：四阶段演进模型</div>
+    <div class="subtitle">技术只占 10-20%，70-80% 是组织变革——BCG 10-20-70 法则 · 变革单元逐级扩展的本质规律</div>
+
+    <div class="stages">
+      <div class="stage s1">
+        <div class="stage-num">1</div>
+        <div class="stage-name">AI工具普及</div>
+        <div class="stage-unit">变革单元：个人</div>
+        <div class="stage-kpi">周活跃率 ≥ 80%</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="stage s2">
+        <div class="stage-num">2</div>
+        <div class="stage-name">工种AI化重塑</div>
+        <div class="stage-unit">变革单元：角色</div>
+        <div class="stage-kpi">效率翻倍</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="stage s3">
+        <div class="stage-num">3</div>
+        <div class="stage-name">团队AI化重组</div>
+        <div class="stage-unit">变革单元：团队</div>
+        <div class="stage-kpi">效率 3-5x</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="stage s4">
+        <div class="stage-num">4</div>
+        <div class="stage-name">业务AI化跃迁</div>
+        <div class="stage-unit">变革单元：组织</div>
+        <div class="stage-kpi">AI收入 >20%</div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-label">企业卡在阶段一的比例</div>
+        <div class="stat-value">80%</div>
+        <div class="stat-desc">声称使用了 GenAI，但未产生显著价值</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">技术 vs 组织变革的比例</div>
+        <div class="stat-value">10:70</div>
+        <div class="stat-desc">BCG 10-20-70 法则：70% 来自组织变革</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">真正进入阶段四的企业</div>
+        <div class="stat-value">&lt;5%</div>
+        <div class="stat-desc">全球范围内，窗口期仅剩 3-5 年</div>
+      </div>
+    </div>
+
+    <div class="source">数据来源：McKinsey 2025 · BCG 2026 · PwC 2026 · Deloitte 2026 · MIT SMR 2026</div>
+  </div>
+</div>
+</body>
+</html>

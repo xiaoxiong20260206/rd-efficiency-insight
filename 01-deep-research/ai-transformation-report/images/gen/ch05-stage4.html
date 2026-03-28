@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1060px; background: #FFFFFF; font-family: -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; }
+.container { width: 1060px; padding: 20px; }
+.inner {
+  width: 1020px;
+  padding: 32px 40px;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 30%, #f0fdf4 100%);
+  border-radius: 16px;
+}
+.label { display: inline-block; background: #059669; color: white; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; margin-bottom: 14px; }
+.title { font-size: 18px; font-weight: 800; color: #064e3b; margin-bottom: 8px; }
+.subtitle { font-size: 13px; color: #065f46; margin-bottom: 20px; line-height: 1.6; }
+.biz-models { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+.bm-card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-top: 3px solid transparent;
+}
+.bm1 { border-top-color: #ef4444; }
+.bm2 { border-top-color: #f59e0b; }
+.bm3 { border-top-color: #10b981; }
+.bm-badge { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; display: inline-block; margin-bottom: 8px; }
+.bm1 .bm-badge { background: #fef2f2; color: #ef4444; }
+.bm2 .bm-badge { background: #fffbeb; color: #d97706; }
+.bm3 .bm-badge { background: #ecfdf5; color: #10b981; }
+.bm-desc { font-size: 12px; color: #44403c; line-height: 1.5; margin-bottom: 6px; }
+.bm-example { font-size: 11px; color: #78716c; font-style: italic; }
+.ceo-box {
+  background: white;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.ceo-title { font-size: 12px; font-weight: 700; color: #059669; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #d1fae5; }
+.ceo-row { display: flex; gap: 8px; margin-bottom: 6px; font-size: 12px; color: #1c1917; line-height: 1.5; }
+.ceo-q { font-weight: 700; color: #065f46; min-width: 210px; flex-shrink: 0; }
+.window-banner {
+  background: #064e3b;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.source { margin-top: 12px; font-size: 10.5px; color: #a8a29e; text-align: right; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="inner">
+    <div class="label">阶段四 · 业务AI化跃迁</div>
+    <div class="title">因AI做全新的事</div>
+    <div class="subtitle">变革单元：组织/商业模式 &nbsp;·&nbsp; 周期：24-48个月 &nbsp;·&nbsp; 核心：不是"用AI做旧事更快"，而是"因AI做全新的事"</div>
+
+    <div class="biz-models">
+      <div class="bm-card bm1">
+        <div class="bm-badge">AI增强产品</div>
+        <div class="bm-desc"><b>将AI能力嵌入现有产品</b>，提升产品溢价能力</div>
+        <div class="bm-example">Adobe Firefly、Notion AI、Canva</div>
+        <div class="bm-example" style="margin-top:4px; color: #ef4444;">前提：阶段二完成</div>
+      </div>
+      <div class="bm-card bm2">
+        <div class="bm-badge">AI即服务</div>
+        <div class="bm-desc"><b>将内部AI能力对外输出</b>，形成新的收入流</div>
+        <div class="bm-example">AWS Bedrock、Azure OpenAI</div>
+        <div class="bm-example" style="margin-top:4px; color: #d97706;">前提：阶段三完成</div>
+      </div>
+      <div class="bm-card bm3">
+        <div class="bm-badge">AI原生业务</div>
+        <div class="bm-desc"><b>从零设计全新商业模式</b>，做传统不可能的事</div>
+        <div class="bm-example">AI药物研发、AI金融风控</div>
+        <div class="bm-example" style="margin-top:4px; color: #059669;">前提：阶段三 + CEO级决心</div>
+      </div>
+    </div>
+
+    <div class="ceo-box">
+      <div class="ceo-title">CEO必须亲自回答的三个战略问题（PwC 2026）</div>
+      <div class="ceo-row"><div class="ceo-q">什么是我们的核心竞争力？</div><div>数据资产、AI能力、生态网络（而非人才密度）</div></div>
+      <div class="ceo-row"><div class="ceo-q">什么业务应该AI化？</div><div>AI可以创造哪些过去不可能的新业务？（而非仅降本）</div></div>
+      <div class="ceo-row"><div class="ceo-q">组织边界在哪里？</div><div>Agent无限扩展，组织边界由战略决定而非人数</div></div>
+    </div>
+
+    <div class="window-banner">⏰ 全球进入阶段四的企业不到5% · 窗口期仅剩3-5年 · 目标：AI原生收入占比 > 20%</div>
+
+    <div class="source">数据来源：PwC 2026 AI Business Predictions · BCG AI Workforce Strategy 2026 · McKinsey China 2025</div>
+  </div>
+</div>
+</body>
+</html>
